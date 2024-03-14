@@ -136,7 +136,8 @@ For password we will use the same "Password1" and disable "Create DNS delegation
 To create dedicated admin account, bottom left click start > Windows Administrative Tools > Active Directory Users and Computers.
 Under forest our newly created domain, right click > New > Organizational units(Fancy way of saying folder) and name it _ADMINS.
 Once we created _ADMINS, right-click again > New > user. Create the user you would like. For User logon name, industry standard is a- first letter of firstname followed by lastname.
-For password use same "Password1" and check "Password never expires" for lab purposes. You should now see the new user, but it's not a admin yet.
+For password use same "Password1" and check "Password never expires" for lab purpose. You should now see the new user, but it's not a admin yet.
+Next right-click new user > Properties > Member Of tab > Add > in "Enter the object names to select, type "domain admins" and click check name followed by ok. Click apply and ok to finalize.
 
 ![Screenshot 2024-03-14 162337](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/37694986-7444-4352-ba5d-203128d0456d)
 
@@ -146,7 +147,28 @@ For password use same "Password1" and check "Password never expires" for lab pur
 
 ![Screenshot 2024-03-14 162655](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3d1884dc-60f7-4a2d-b49e-8d26e7e11fc6)
 
+![Screenshot 2024-03-14 162725](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/818dd73b-82d3-46a7-9224-19f6e34113b5)
 
+![Screenshot 2024-03-14 162807](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3502e52b-d91a-40e0-8dd6-79d1f003bc2e)
+
+![Screenshot 2024-03-14 164028](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bf7e36ee-cd4a-45a0-ad13-8fff1905c78f)
+
+![Screenshot 2024-03-14 164046](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2b3c32c2-9cf2-4c3b-8c38-acd0fee2d9b2)
+
+![Screenshot 2024-03-14 164054](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b6541bcf-c897-4e49-9221-22461b808f1d)
+
+![Screenshot 2024-03-14 164118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06df0cb6-3bf1-4d02-aa0b-3e3489ceb6bb)
+
+![Screenshot 2024-03-14 164130](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ac1478af-378c-4ec7-a130-1d6f9cddb68b)
+
+To use our newly created admin account logout of account from start menu, but this time select "Other user". 
+Enter the logon username and password and you should be able to login using the new admin account
+
+![Screenshot 2024-03-14 165549](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c19ed6e8-e12a-4f89-a77e-c39ba18a88ee)
+
+![Screenshot 2024-03-14 165608](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/7ee49b94-54ae-49b1-b3a7-b68fd01aa786)
+
+![Screenshot 2024-03-14 165626](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/98c0c392-d498-4519-88c2-0376ad6bbf5a)
 
 
 
