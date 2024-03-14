@@ -38,57 +38,57 @@ In this Lab, we are going to walk through how to create an active directory home
 
 Download and install Oracle Virtual Box: <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Download Windows 10 and Windows Server 2019 ISO files:  <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a508ea67-a9e3-4459-9acb-4bea1a48dc23" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0d3e233e-628b-46b2-b164-e2632337ca04" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/4f565cf5-d6dd-4344-9712-10b77343b7e2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56593ba5-947f-4b19-b35c-a04559dd320b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a508ea67-a9e3-4459-9acb-4bea1a48dc23" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0d3e233e-628b-46b2-b164-e2632337ca04" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/4f565cf5-d6dd-4344-9712-10b77343b7e2" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56593ba5-947f-4b19-b35c-a04559dd320b" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Create a virtual machine for Domain Controller and host active directory. Call it DC(Domain Controller) for simplicity.: <br/>
 Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0c1f0da2-a4ce-4a2a-ad97-2fb4e8303251" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc002ccc-f9c8-485e-b17b-8d4acb87d291" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6a44740e-a08f-4b7a-a081-91fb2d5b74e5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0c1f0da2-a4ce-4a2a-ad97-2fb4e8303251" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc002ccc-f9c8-485e-b17b-8d4acb87d291" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6a44740e-a08f-4b7a-a081-91fb2d5b74e5" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Equip virtual machine with two network adapters.  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
 2nd dedicated for internal VMware network(Adapter 2 Internal network):  <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/128b1831-037a-49b2-be7a-3e0455098031" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6882c4b4-4e7a-4eb2-8d8e-2e77428594a5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/128b1831-037a-49b2-be7a-3e0455098031" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6882c4b4-4e7a-4eb2-8d8e-2e77428594a5" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Install Windows Server 2019 on Domain Controller:  <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf805d7a-e873-4092-bbac-0972538c6c79" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b145b964-d379-4d58-bfcb-d289acedaf70" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf805d7a-e873-4092-bbac-0972538c6c79" height="60%" width="60%" alt="Disk Sanitization Steps"/>  <br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b145b964-d379-4d58-bfcb-d289acedaf70" height="60%" width="60%" alt="Disk Sanitization Steps"/>  <br/>
 <br/>
 Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3621043a-ad47-4cff-bea5-90cc40f17675" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6084e94e-d820-4a32-8b1b-8be26862303c" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/53531a1a-c1ea-435f-b213-f5c40ab01011" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3621043a-ad47-4cff-bea5-90cc40f17675" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6084e94e-d820-4a32-8b1b-8be26862303c" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/53531a1a-c1ea-435f-b213-f5c40ab01011" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <br />
 Create default password of "Password1" We will use this as universal password for lab purposes:  <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e0ec2508-fdb8-4258-8eb8-91162ef271b6" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e0ec2508-fdb8-4258-8eb8-91162ef271b6" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <br/>
 To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we created earlier. <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d45bf49a-448a-46bc-b445-7834ef39c992" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d45bf49a-448a-46bc-b445-7834ef39c992" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <br/>
 Insert Guest Additions CD image to reduce lag in VM. Double click the inserted image and run "VBoxWindowsadditions.amd64". Follow instructions on screen and click on reboot later. After Shutdown VM <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0447ed81-5ecd-4803-ba5d-46f206f459fa" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5ccef606-ca3c-4b2e-a4d6-ea70edb1cb8d" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a2016360-0da2-4e8d-905b-6d5d0f7b189f" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0447ed81-5ecd-4803-ba5d-46f206f459fa" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5ccef606-ca3c-4b2e-a4d6-ea70edb1cb8d" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a2016360-0da2-4e8d-905b-6d5d0f7b189f" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <br/>
 Assign IP Addresses:  <br/>
 
@@ -96,11 +96,11 @@ Assign and label the correct network adapter
 Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-clicking on it.
 
 
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/287e628a-30be-4b97-8ce0-b0278d54c65e" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/36f5c523-4e00-4ce2-960c-e13a5c43782c" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/728a5958-139b-4f3f-af33-c22bc3b19161" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0587e85b-7c39-4dc8-8ce7-32654c9c9477" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b1b831df-6aad-4b23-8e96-97701c5a4f6b7" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/287e628a-30be-4b97-8ce0-b0278d54c65e" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/36f5c523-4e00-4ce2-960c-e13a5c43782c" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/728a5958-139b-4f3f-af33-c22bc3b19161" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0587e85b-7c39-4dc8-8ce7-32654c9c9477" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b1b831df-6aad-4b23-8e96-97701c5a4f6b7" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 
 
 
