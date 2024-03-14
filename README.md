@@ -173,6 +173,7 @@ Enter the logon username and password and you should be able to login using the 
 7.Configure NAT and Routing for internet access:  <br/>
 
 Start by clicking "Add roles and features" > Next x3 > check box "Remote Access". Select Routing(It will automatically select first option) > Add features > Install.
+Click tools from upper right corner > Routing and Remote Access > 
 
 ![Screenshot 2024-03-14 170057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fdb96cbb-7866-472d-82aa-56af9b639e17)
 
@@ -181,6 +182,16 @@ Start by clicking "Add roles and features" > Next x3 > check box "Remote Access"
 ![Screenshot 2024-03-14 170205](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/34b39cd4-61e5-4a1a-abc5-1b20343fef3b)
 
 ![Screenshot 2024-03-14 170218](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/05c3165f-be51-4db1-835f-a0643ad5dcf8)
+
+![Screenshot 2024-03-14 171623](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a518f0b8-9b90-4bff-ad17-f416d4965049)
+
+![Screenshot 2024-03-14 171048](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/68bb0776-1021-48f8-bde8-775b9db11599)
+
+![Screenshot 2024-03-14 171124](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6234c76e-c4ea-43cc-8992-162bccde71dd)
+
+![Screenshot 2024-03-14 171232](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6aa37b17-77c2-4860-9516-2a0e36fd7d0d)
+
+
 
 
 
