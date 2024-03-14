@@ -39,7 +39,7 @@ In this Lab, we are going to walk through how to create an active directory home
 1.Download and install Oracle Virtual Box: <br/>
 ![Screenshot 2024-03-13 212327](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d9e2235f-b49f-4299-87ea-c8dd00a11636)
 
-2.Download Windows 10 and Windows Server 2019 ISO files:  <br/>
+2.Download Windows 10 and Windows Server 2019 ISO files(Recommend to save on desktop or easy to access folder):  <br/>
 
 ![Screenshot 2024-03-13 213228](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/727d2347-4018-4420-8d87-33d0b111d283)
 
@@ -63,27 +63,30 @@ Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT
 ![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 4.Install Windows Server 2019 on Domain Controller:  <br/>
 
-Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
+![Screenshot 2024-03-13 225535](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e2f21109-2bb1-4b18-a7e0-32a751ec3eab)
 
+![Screenshot 2024-03-13 225558](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/09a79031-e782-4f81-9b13-c0c490e5ccde)
+
+Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
 Create default password of "Password1" We will use this as universal password for lab purposes:  <br/>
+
+![Screenshot 2024-03-13 230839](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/268fa95f-d3f0-4dc9-b437-de2d412defc1)
+
+![Screenshot 2024-03-13 231821](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b2334fc3-849d-41af-9e32-c854f64682fb)
+
+![Screenshot 2024-03-13 231839](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/947e9f93-2a8d-4587-b9b7-3a3a73e82f9c)
+
+![Screenshot 2024-03-13 232623](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/71706429-add3-4625-bf4d-dd28f258ffd3)
+
+
+
+
+
+
+
+
 
 To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we created earlier. <br/>
 <
@@ -98,6 +101,31 @@ Start by selecting the Ethernet connection that is connected to the internet. Vi
 
 In internal adapter options, right-click and select properties, double click Internet Protocol Version 4(TCP/IPv4). Change option to "Use the following IP address:" and enter the IP address: 172.16.0.1 and subnet mask as 255.255.255.0
 For DNS, Once AD is installed, it automatically installs DNS. So we can enter the same IP Address above 172.16.0.1(Server will use itself as DNS server)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
