@@ -51,32 +51,35 @@ In this Lab, we are going to walk through how to create an active directory home
 Call it DC(Domain Controller) for simplicity. <br/>
 Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
 
-
-![Screenshot 2024-03-13 214509](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6a2751db-e5a5-4ca1-bc79-073cb2a04134)
+![Screenshot 2024-03-13 224057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9b29c5a9-86cf-499e-be0c-4850b8f87028)
 ![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
+![Screenshot 2024-03-13 223910](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bb8e3733-cbc7-47f9-9e73-52f92d7ba1b3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Equip virtual machine with two network adapters.  <br/>
+3.Equip virtual machine with two network adapters:  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
-2nd dedicated for internal VMware network(Adapter 2 Internal network):  <br/>
+2nd dedicated for internal VMware network(Adapter 2 Internal network)  <br/>
 
-Install Windows Server 2019 on Domain Controller:  <br/>
+![Screenshot 2024-03-13 224329](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5573e8e1-a127-48b9-81d7-03a515f60fb0)
+![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.Install Windows Server 2019 on Domain Controller:  <br/>
 
 Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
 
@@ -98,20 +101,20 @@ For DNS, Once AD is installed, it automatically installs DNS. So we can enter th
 
 
 
-Name server, establish Active Directory, specify domain name:  <br/>
+5.Name server, establish Active Directory, specify domain name:  <br/>
 
 
 
 
 
 
-Configure NAT and Routing for internet access:  <br/>
+7.Configure NAT and Routing for internet access:  <br/>
 
-Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
+8.Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
 
-Run PowerShell script to create 1,000 users in Active Directory:  <br/>
+9.Run PowerShell script to create 1,000 users in Active Directory:  <br/>
 
-Create another virtual machine, install Windows 10, connect to private network:  <br/>
+10.Create another virtual machine, install Windows 10, connect to private network:  <br/>
 
 
 <!--
