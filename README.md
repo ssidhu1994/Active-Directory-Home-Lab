@@ -88,13 +88,11 @@ Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by
 Create default password of "Password1" We will use this as universal password for lab purposes:  <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e0ec2508-fdb8-4258-8eb8-91162ef271b6" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
-
-
-
-
-
-
-
+<br/>
+To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we created earlier. <br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d45bf49a-448a-46bc-b445-7834ef39c992" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<br/>
 
 
 
