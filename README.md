@@ -85,12 +85,9 @@ Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6084e94e-d820-4a32-8b1b-8be26862303c" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/53531a1a-c1ea-435f-b213-f5c40ab01011" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br />
-<br />
-
-
-
-
-
+Create default password of "Password1" We will use this as universal password for lab purposes:  <br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e0ec2508-fdb8-4258-8eb8-91162ef271b6" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 
 
 
