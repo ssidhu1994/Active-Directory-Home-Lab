@@ -109,18 +109,14 @@ For DNS, Once AD is installed, it automatically installs DNS. So we can enter th
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/91e873c9-df9b-4037-b649-5edf64cf9e95" height="70%" width="70%" alt="Disk Sanitization Steps"/> <br />
 
 Name server, establish Active Directory, specify domain name:  <br/>
-
-
-
-Select "Add roles and features"
-
-![Screenshot 2024-03-14 145847](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e54f1bb5-00da-4059-bb28-7a879b86fdb9)
-
-Select Next until you reach image below. Select "Active Directory Domain Services". Click add features and next until install.
-![Screenshot 2024-03-14 150213](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9bfb5c6f-b603-40ec-9157-104b225074d7)
-
-
-
+<br/>
+Select "Add roles and features"<br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e54f1bb5-00da-4059-bb28-7a879b86fdb9" height="70%" width="70%" alt="Disk Sanitization Steps"/> <br />
+<br/>
+Select Next until you reach image below. Select "Active Directory Domain Services". Click add features and next until install.<br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9bfb5c6f-b603-40ec-9157-104b225074d7" height="70%" width="70%" alt="Disk Sanitization Steps"/> <br />
 
 
 
