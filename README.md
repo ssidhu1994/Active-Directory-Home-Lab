@@ -93,13 +93,15 @@ Insert Guest Additions CD image to reduce lag in VM. Double click the inserted i
 Assign IP Addresses:  <br/>
 
 Assign and label the correct network adapter
-Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-clicking on it. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to Internet and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IPAdress, so internal VM one was provided.
+Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-clicking on it. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to Internet and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IP Address, so internal VM one was provided.
 
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/287e628a-30be-4b97-8ce0-b0278d54c65e" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/36f5c523-4e00-4ce2-960c-e13a5c43782c" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/728a5958-139b-4f3f-af33-c22bc3b19161" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0587e85b-7c39-4dc8-8ce7-32654c9c9477" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b1b831df-6aad-4b23-8e96-97701c5a4f6b7" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e1b50881-f2bb-4647-bb07-8f607c330f1e" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
+
 
 
 
