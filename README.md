@@ -45,9 +45,6 @@ In this Lab, we are going to walk through how to create an active directory home
 
 
 
-
-
-
 Download and install Oracle Virtual Box: <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -71,14 +68,17 @@ Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your
 <br />
 Equip virtual machine with two network adapters.  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
-2nd dedicated for internal VMware network(Adapter 2 Internal network.:  <br/>
+2nd dedicated for internal VMware network(Adapter 2 Internal network):  <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/128b1831-037a-49b2-be7a-3e0455098031" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6882c4b4-4e7a-4eb2-8d8e-2e77428594a5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Install Windows Server 2019 on Domain Controller, assign IP addresses:  <br/>
+  <br/>
 <br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf805d7a-e873-4092-bbac-0972538c6c79" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b145b964-d379-4d58-bfcb-d289acedaf70" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
