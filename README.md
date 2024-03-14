@@ -90,12 +90,17 @@ Insert Guest Additions CD image to reduce lag in VM. Double click the inserted i
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5ccef606-ca3c-4b2e-a4d6-ea70edb1cb8d" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a2016360-0da2-4e8d-905b-6d5d0f7b189f" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br/>
+Assign IP Addresses:  <br/>
+
+Assign and label the correct network adapter
+Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-clicking on it.
 
 
-
-
-
-
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/287e628a-30be-4b97-8ce0-b0278d54c65e" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/36f5c523-4e00-4ce2-960c-e13a5c43782c" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/728a5958-139b-4f3f-af33-c22bc3b19161" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0587e85b-7c39-4dc8-8ce7-32654c9c9477" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b1b831df-6aad-4b23-8e96-97701c5a4f6b7" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 
 
 
