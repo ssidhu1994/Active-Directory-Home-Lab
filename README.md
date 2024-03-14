@@ -36,15 +36,6 @@ In this Lab, we are going to walk through how to create an active directory home
 
 <h2>Program walk-through:</h2>
 
-
-
-
-
-
-
-
-
-
 Download and install Oracle Virtual Box: <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -93,8 +84,11 @@ To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we c
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d45bf49a-448a-46bc-b445-7834ef39c992" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br/>
-
-
+Insert Guest Additions CD image to reduce lag in VM. Double click the inserted image and run "VBoxWindowsadditions.amd64". <br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0447ed81-5ecd-4803-ba5d-46f206f459fa" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5ccef606-ca3c-4b2e-a4d6-ea70edb1cb8d" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<br/>
 
 
 
