@@ -80,17 +80,17 @@ Create default password of "Password1" We will use this as universal password fo
 
 ![Screenshot 2024-03-13 232623](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/71706429-add3-4625-bf4d-dd28f258ffd3)
 
-
-
-
-
-
-
-
-
 To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we created earlier. <br/>
-<
+
+![Screenshot 2024-03-13 232924](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/88f2c338-2cae-485c-a4d2-7185ad7f5aec)
+
 Insert Guest Additions CD image to reduce lag in VM. Double click the inserted image and run "VBoxWindowsadditions.amd64". Follow instructions on screen and click on reboot later. After Shutdown VM <br/>
+
+![Screenshot 2024-03-13 233639](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dcaac46f-8f34-482a-876e-af696a00aa1c)
+
+![Screenshot 2024-03-13 234138](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/89519995-a8bd-4e9a-bc80-3f0757f9eaa5)
+
+
 
 Assign IP Addresses:  <br/>
 
