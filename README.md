@@ -55,7 +55,6 @@ In this Lab, we are going to walk through how to create an active directory home
 
 
 
-
 Download and install Oracle Virtual Box: <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -66,10 +65,16 @@ Download Windows 10 and Windows Server 2019 ISO files:  <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a508ea67-a9e3-4459-9acb-4bea1a48dc23" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0d3e233e-628b-46b2-b164-e2632337ca04" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/4f565cf5-d6dd-4344-9712-10b77343b7e2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56593ba5-947f-4b19-b35c-a04559dd320b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Create a virtual machine for Domain Controller and host active directory: <br/>
+Create a virtual machine for Domain Controller and host active directory. Call it DC(Domain Controller) for simplicity.: <br/>
+Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
 <br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51be9bd3-2354-4ce9-9665-3547099473a4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
