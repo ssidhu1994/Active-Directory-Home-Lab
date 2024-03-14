@@ -52,9 +52,6 @@ In this Lab, we are going to walk through how to create an active directory home
 
 
 
-
-
-
 Download and install Oracle Virtual Box: <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc4f6b36-daad-41af-9ace-f8d2a0aac857" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -71,9 +68,9 @@ Download Windows 10 and Windows Server 2019 ISO files:  <br/>
 Create a virtual machine for Domain Controller and host active directory. Call it DC(Domain Controller) for simplicity.: <br/>
 Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
 <br/>
-<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51be9bd3-2354-4ce9-9665-3547099473a4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0c1f0da2-a4ce-4a2a-ad97-2fb4e8303251" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dc002ccc-f9c8-485e-b17b-8d4acb87d291" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6a44740e-a08f-4b7a-a081-91fb2d5b74e5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
