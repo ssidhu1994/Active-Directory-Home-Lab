@@ -113,37 +113,25 @@ For DNS, Once AD is installed, it automatically installs DNS. So we can enter th
 
 ![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 5.Name server, establish Active Directory, specify domain name:  <br/>
 
+From server manager, select "Add roles and features". Select next x2 and until you see "Select server role". Select "Active Directory Domain Services". Click add features and continue with installation. 
+Select yellow flag from upper right corner and click "Promote this server to a domain controller". Select Add a new forest and call it mydomain.com(Keep it simple for lab). 
+For password we will use the same "Password1" and disable "Create DNS delegation". Click next until installtion is complete, after which the VM will restart.
 
+![Screenshot 2024-03-14 145847](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9aac421c-8190-4687-bfc7-fa3a8771d0bd)
 
+![Screenshot 2024-03-14 150213](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e2eaa17c-cbba-4283-964a-4a684927a9c2)
 
+![Screenshot 2024-03-14 151211](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d4b1b08d-cdb6-4174-a274-134d49cd93a4)
+
+![Screenshot 2024-03-14 160606](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5e20c6a9-2cbe-467a-bfbf-35992166371d)
+
+![Screenshot 2024-03-14 160657](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3b3cb124-67b8-4d09-b5e3-f8ab4e019153)
+
+![Screenshot 2024-03-14 160746](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20528794-e2d5-4db0-ad52-c94ae14cc7f3)
+
+![Screenshot 2024-03-14 160855](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c29cbf89-716e-467e-8e47-f5357c172c94)
 
 
 7.Configure NAT and Routing for internet access:  <br/>
