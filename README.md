@@ -173,7 +173,8 @@ Enter the logon username and password and you should be able to login using the 
 7.Configure NAT and Routing for internet access:  <br/>
 
 Start by clicking "Add roles and features" > Next x3 > check box "Remote Access". Select Routing(It will automatically select first option) > Add features > Install.
-Click tools from upper right corner > Routing and Remote Access > right-click server name >
+Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access.
+Select Network address translation (NAT) > select the IPv4 address which we named earlier to INTERNET. Server should have a upwards green arrow and connected to internet
 
 ![Screenshot 2024-03-14 170057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fdb96cbb-7866-472d-82aa-56af9b639e17)
 
@@ -191,7 +192,7 @@ Click tools from upper right corner > Routing and Remote Access > right-click se
 
 ![Screenshot 2024-03-14 171232](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6aa37b17-77c2-4860-9516-2a0e36fd7d0d)
 
-
+![Screenshot 2024-03-14 172422](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/74f55e12-acce-4ebb-8a7a-c41526a11e08)
 
 
 
