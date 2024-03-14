@@ -170,18 +170,29 @@ Enter the logon username and password and you should be able to login using the 
 
 ![Screenshot 2024-03-14 165626](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/98c0c392-d498-4519-88c2-0376ad6bbf5a)
 
-
-
-
-
-
-
-
-
-
-
-
 7.Configure NAT and Routing for internet access:  <br/>
+
+Start by clicking "Add roles and features" > Next x3 > check box "Remote Access". Select Routing(It will automatically select first option) > Add features > Install.
+
+
+![Screenshot 2024-03-14 170057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fdb96cbb-7866-472d-82aa-56af9b639e17)
+
+
+![Screenshot 2024-03-14 170126](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d6261656-0a4c-494d-ad20-caeda64c3be7)
+
+
+![Screenshot 2024-03-14 170205](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/34b39cd4-61e5-4a1a-abc5-1b20343fef3b)
+
+
+![Screenshot 2024-03-14 170218](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/05c3165f-be51-4db1-835f-a0643ad5dcf8)
+
+
+
+
+
+
+
+
 
 8.Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
 
