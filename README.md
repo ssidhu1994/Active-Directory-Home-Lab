@@ -11,7 +11,7 @@ In this Lab, we are going to walk through how to create an active directory home
 3. <b>Create a virtual machine for Domain Controller and host active directory</b>
 4. <b>Equip virtual machine with two network adapters</b>
 5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses</b>
-6. <b>Name server, establish Active Directory, specify domain name</b>
+6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b>
 7. <b>Configure NAT and Routing for internet access</b>
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
 9. <b>Run PowerShell script to create 1,000 users in Active Directory</b>
@@ -113,7 +113,7 @@ For DNS, Once AD is installed, it automatically installs DNS. So we can enter th
 
 ![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
-5.Name server, establish Active Directory, specify domain name:  <br/>
+5.Name server, establish Active Directory, and create dedicated domain admin account:  <br/>
 
 From server manager, select "Add roles and features". Select next x2 and until you see "Select server role". Select "Active Directory Domain Services". Click add features and continue with installation. 
 Select yellow flag from upper right corner and click "Promote this server to a domain controller". Select Add a new forest and call it mydomain.com(Keep it simple for lab). 
@@ -132,6 +132,9 @@ For password we will use the same "Password1" and disable "Create DNS delegation
 ![Screenshot 2024-03-14 160746](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20528794-e2d5-4db0-ad52-c94ae14cc7f3)
 
 ![Screenshot 2024-03-14 160855](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c29cbf89-716e-467e-8e47-f5357c172c94)
+
+To create dedicated admin account, bottom left click start > Windows Administrative Tools > Active Directory Users and Computers.
+Under forest our newly created domain, right click > New > Organizational units(Fancy way of saying folder).
 
 
 7.Configure NAT and Routing for internet access:  <br/>
