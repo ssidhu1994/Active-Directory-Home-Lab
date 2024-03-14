@@ -101,8 +101,7 @@ Start by selecting the Ethernet connection that is connected to the internet. Vi
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0587e85b-7c39-4dc8-8ce7-32654c9c9477" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b1b831df-6aad-4b23-8e96-97701c5a4f6b7" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e1b50881-f2bb-4647-bb07-8f607c330f1e" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
-
-
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/366e7d30-1a33-4505-a9e5-50abb60e69b8" height="60%" width="60%" alt="Disk Sanitization Steps"/> <br />
 
 
 
