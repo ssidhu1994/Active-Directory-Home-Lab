@@ -90,12 +90,26 @@ Insert Guest Additions CD image to reduce lag in VM. Double click the inserted i
 
 ![Screenshot 2024-03-13 234138](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/89519995-a8bd-4e9a-bc80-3f0757f9eaa5)
 
-
-
 Assign IP Addresses:  <br/>
+Select the computer icon from bottom right icon tray, click unidentified network > Change adapter options.
 
-Assign and label the correct network adapter
-Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-clicking on it. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to Internet and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IP Address, so internal VM one was provided.
+![Screenshot 2024-03-13 235307](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ddb12733-b5a2-4044-ab9f-5ca187632923)
+
+![Screenshot 2024-03-13 235318](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9a2864b2-0104-474b-876c-957821346b76)
+
+
+Here we see our two nics(Network interface controller) from earlier. Assign and label the correct network adapter
+Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-click > Status > Details. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to "Internet" and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IP Address, so internal VM one was provided.
+
+![Screenshot 2024-03-13 235333](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c382f8c6-4186-4ba7-a24e-1bf4231a7f98)
+
+![Screenshot 2024-03-13 235402](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c252391f-7856-44e4-a1da-664ed056e9a5)
+
+![Screenshot 2024-03-14 001737](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/1cfbc947-0990-404f-8cd4-a92b172d0af4)
+
+![Screenshot 2024-03-14 002118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06a2daa1-9286-4223-a28d-ea49f3328f44)
+
+
 
 
 
