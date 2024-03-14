@@ -74,35 +74,56 @@ Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6882c4b4-4e7a-4eb2-8d8e-2e77428594a5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Install Windows Server 2019 on Domain Controller, assign IP addresses:  <br/>
-  <br/>
+Install Windows Server 2019 on Domain Controller:  <br/>
 <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf805d7a-e873-4092-bbac-0972538c6c79" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
 <img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/b145b964-d379-4d58-bfcb-d289acedaf70" height="80%" width="80%" alt="Disk Sanitization Steps"/>  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br/>
+Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
+<br/>
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3621043a-ad47-4cff-bea5-90cc40f17675" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6084e94e-d820-4a32-8b1b-8be26862303c" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
+<img src="https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/53531a1a-c1ea-435f-b213-f5c40ab01011" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br />
 <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Name server, establish Active Directory, specify domain name:  <br/>
-<br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+
 Configure NAT and Routing for internet access:  <br/>
-<br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
-<br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 Run PowerShell script to create 1,000 users in Active Directory:  <br/>
-<br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 Create another virtual machine, install Windows 10, connect to private network:  <br/>
-<br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 
 <!--
  ```diff
