@@ -194,15 +194,36 @@ Select Network address translation (NAT) > select the IPv4 address which we name
 
 ![Screenshot 2024-03-14 172422](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/74f55e12-acce-4ebb-8a7a-c41526a11e08)
 
-
-
-
-
-
-
-
-
 8.Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 9.Run PowerShell script to create 1,000 users in Active Directory:  <br/>
 
