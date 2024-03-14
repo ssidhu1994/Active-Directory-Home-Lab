@@ -55,7 +55,7 @@ Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your
 ![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
 ![Screenshot 2024-03-13 223910](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bb8e3733-cbc7-47f9-9e73-52f92d7ba1b3)
 
-3.Equip virtual machine with two network adapters:  <br/>
+4.Equip virtual machine with two network adapters:  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
 2nd dedicated for internal VMware network(Adapter 2 Internal network)  <br/>
 
@@ -63,7 +63,7 @@ Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT
 ![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
 
 
-4.Install Windows Server 2019 on Domain Controller:  <br/>
+5.Install Windows Server 2019 on Domain Controller:  <br/>
 
 ![Screenshot 2024-03-13 225535](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e2f21109-2bb1-4b18-a7e0-32a751ec3eab)
 
@@ -97,7 +97,6 @@ Select the computer icon from bottom right icon tray, click unidentified network
 
 ![Screenshot 2024-03-13 235318](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9a2864b2-0104-474b-876c-957821346b76)
 
-
 Here we see our two nics(Network interface controller) from earlier. Assign and label the correct network adapter
 Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-click > Status > Details. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to "Internet" and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IP Address, so internal VM one was provided.
 
@@ -109,13 +108,10 @@ Start by selecting the Ethernet connection that is connected to the internet. Vi
 
 ![Screenshot 2024-03-14 002118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06a2daa1-9286-4223-a28d-ea49f3328f44)
 
-
-
-
-
-In internal adapter options, right-click and select properties, double click Internet Protocol Version 4(TCP/IPv4). Change option to "Use the following IP address:" and enter the IP address: 172.16.0.1 and subnet mask as 255.255.255.0
+In X_INTERNAL_X adapter options, right-click and select properties, double click Internet Protocol Version 4(TCP/IPv4). Change option to "Use the following IP address:" and enter the IP address: 172.16.0.1 and subnet mask as 255.255.255.0
 For DNS, Once AD is installed, it automatically installs DNS. So we can enter the same IP Address above 172.16.0.1(Server will use itself as DNS server)
 
+![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
 
 
