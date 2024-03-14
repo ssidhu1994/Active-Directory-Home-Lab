@@ -36,13 +36,10 @@ In this Lab, we are going to walk through how to create an active directory home
 
 <h2>Program walk-through:</h2>
 
-Download and install Oracle Virtual Box: <br/>
-
-
-
-Download Windows 10 and Windows Server 2019 ISO files:  <br/>
-
+1.Download and install Oracle Virtual Box: <br/>
 ![Screenshot 2024-03-13 212327](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d9e2235f-b49f-4299-87ea-c8dd00a11636)
+
+2.Download Windows 10 and Windows Server 2019 ISO files:  <br/>
 
 ![Screenshot 2024-03-13 213228](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/727d2347-4018-4420-8d87-33d0b111d283)
 
@@ -50,13 +47,30 @@ Download Windows 10 and Windows Server 2019 ISO files:  <br/>
 
 ![Screenshot 2024-03-13 213257](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2d7cdbd2-5c53-4208-8e63-080326530be5)
 
-
-
-
-
-
-Create a virtual machine for Domain Controller and host active directory. Call it DC(Domain Controller) for simplicity.: <br/>
+3. Create a virtual machine for Domain Controller and host active directory:  <br/>
+Call it DC(Domain Controller) for simplicity. <br/>
 Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
+
+
+![Screenshot 2024-03-13 214509](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6a2751db-e5a5-4ca1-bc79-073cb2a04134)
+![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Equip virtual machine with two network adapters.  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
