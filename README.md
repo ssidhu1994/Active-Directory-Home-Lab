@@ -134,7 +134,29 @@ For password we will use the same "Password1" and disable "Create DNS delegation
 ![Screenshot 2024-03-14 160855](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c29cbf89-716e-467e-8e47-f5357c172c94)
 
 To create dedicated admin account, bottom left click start > Windows Administrative Tools > Active Directory Users and Computers.
-Under forest our newly created domain, right click > New > Organizational units(Fancy way of saying folder).
+Under forest our newly created domain, right click > New > Organizational units(Fancy way of saying folder) and name it _ADMINS.
+Once we created _ADMINS, right-click again > New > user. Create the user you would like. For User logon name, industry standard is a- first letter of firstname followed by lastname.
+For password use same "Password1" and check "Password never expires" for lab purposes. You should now see the new user, but it's not a admin yet.
+
+![Screenshot 2024-03-14 162337](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/37694986-7444-4352-ba5d-203128d0456d)
+
+![Screenshot 2024-03-14 162434](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/def8e095-e88b-46a2-abcc-04ac4723061b)
+
+![Screenshot 2024-03-14 162519](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/edc7e25d-9529-4b6b-b00e-3ab2d29915ab)
+
+![Screenshot 2024-03-14 162655](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3d1884dc-60f7-4a2d-b49e-8d26e7e11fc6)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 7.Configure NAT and Routing for internet access:  <br/>
