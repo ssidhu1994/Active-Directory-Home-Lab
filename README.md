@@ -202,8 +202,8 @@ Next Click Tools > DHCP. You will notice the red down arrow indicating the serve
 We will name the scope after the IP range, 172.16.0.100-200. Next we enter the start address(172.16.0.100) & end address(172.16.0.200).
 Length we will change to 24 so we have Subnet mask of 255.255.255.0. Skip adding any exclusions. The lease duration is how long a client can use the IP address from the server before it needs to be refreshed.
 CLick "Yes, I want to configure these options now". We want to enable this because we want to configure which server to use for DNS & default gateway so the clients can access the internet. 
-
-
+For Router, we will add 172.16.0.1. This is because we configured NAT on the domain controller and the domain controller has routing configured. After click add followed by next until finish.
+Onces finished, right-click the DHCP server and Authorize. Right-click once more and click refresh. You should now see the IPv4 & IPv6 turn green with upwards arrow.
 
 ![Screenshot 2024-03-16 154528](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/7ebba184-7aa6-482e-893a-2a5c6385d0bc)
 
