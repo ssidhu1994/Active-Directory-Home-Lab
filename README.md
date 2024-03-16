@@ -233,6 +233,38 @@ Onces finished, right-click the DHCP server and Authorize. Right-click once more
 
 9.Create new client user. Create another virtual machine, install Windows 10, connect to private network:  <br/>
 
+To create new user
+
+
+
+
+
+
+
+
+Next we will create a new VM server which the have windows 10 for our newly created client. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. 
+Once server is created, click settings and under network, change adapter 1 to Internal Network. This is because we configured DHCP address from main controller. This mimics a corprate network.
+Now start the new VM and browse to the location you put the Windows.iso file and click next. When it askes to activate windows, click "I don't have a product key", and follow the on screen instructions.
+We will install Windows 10 pro because it can join the domain, home can't. Custom install followed by next. 
+
+
+![Screenshot 2024-03-16 182648](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec9872ea-06f5-4a77-9f5d-178346cc20c3)
+
+![Screenshot 2024-03-16 182712](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/52036531-87cc-417f-8908-2743b585b1ef)
+
+![Screenshot 2024-03-16 182857](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/250df3cc-e337-4471-ac22-829c773e84cc)
+
+![Screenshot 2024-03-16 183208](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/4b741acc-cf31-4d37-970c-6191fe3ddc98)
+
+![Screenshot 2024-03-16 183248](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/587bf918-cede-41e0-82de-b8148fe8ac55)
+
+![Screenshot 2024-03-16 183313](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/730d0bf3-2828-4cd6-a647-bc633afafacf)
+
+![Screenshot 2024-03-16 183330](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2251f0ad-2602-439a-a265-073e22e5f477)
+
+![Screenshot 2024-03-16 183337](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/62a7b777-333d-48aa-bd2e-14dbd4ddc7aa)
+
+
 
 
 
