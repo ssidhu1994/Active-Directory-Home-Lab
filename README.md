@@ -196,23 +196,34 @@ Select Network address translation (NAT) > select the IPv4 address which we name
 
 8.Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
 
+The purpose of setting up DHCP server is to allow windows 10 clients to get an IP address to access the internet.
+Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature and next until install
 
+![Screenshot 2024-03-16 154528](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/7ebba184-7aa6-482e-893a-2a5c6385d0bc)
 
+![Screenshot 2024-03-16 154616](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/85a3df28-99f2-4360-9ead-bd2517018014)
 
+![Screenshot 2024-03-16 155317](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d33e8aac-1b90-4ce4-a677-fdccfba2f2f1)
 
+![Screenshot 2024-03-16 155436](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/31206fd4-66f0-40ee-b30a-2c31dcc62937)
 
+![Screenshot 2024-03-16 160238](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8401ce66-f84f-49ad-b732-13f37b3841e0)
 
+![Screenshot 2024-03-16 160328](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a4cdf9e9-604f-44c8-a6b4-237cc7063559)
 
+![Screenshot 2024-03-16 160356](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3e0427f0-d795-491c-85f8-accb8d2ce80a)
 
+![Screenshot 2024-03-16 160405](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e45adfb5-1832-4970-8b68-c9dff5478405)
 
+![Screenshot 2024-03-16 160413](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/7ed8952a-7cb7-4ddc-b8e3-679b0b21a618)
 
+![Screenshot 2024-03-16 160509](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/71e7f524-9fba-4e34-934c-b74bd950fa8b)
 
+![Screenshot 2024-03-16 160530](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d585739b-990b-4fcb-bb24-444e6b8c104e)
 
+![Screenshot 2024-03-16 160542](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/a0257ff1-f846-424e-8cde-0bb29b52bd72)
 
-
-
-
-
+![Screenshot 2024-03-16 160553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56de7c23-9b6a-4022-9f4d-48f915b324e9)
 
 
 
