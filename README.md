@@ -197,8 +197,8 @@ Select Network address translation (NAT) > select the IPv4 address which we name
 8.Set up DHCP to assign IP addresses to Windows 10 machine:  <br/>
 
 The purpose of setting up DHCP server is to allow windows 10 clients to get an IP address to access the internet.
-Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature and next until install
-Next Click Tools > DHCP. You will notice the red down arrow indicating the server is down. Right click IPv4 and click "New Scope"
+Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature and next until install.
+Next Click Tools > DHCP. You will notice the red down arrow indicating the server is down. Right click IPv4 and click "New Scope".
 We will name the scope after the IP range, 172.16.0.100-200. Next we enter the start address(172.16.0.100) & end address(172.16.0.200).
 Length we will change to 24 so we have Subnet mask of 255.255.255.0. Skip adding any exclusions. The lease duration is how long a client can use the IP address from the server before it needs to be refreshed.
 CLick "Yes, I want to configure these options now". We want to enable this because we want to configure which server to use for DNS & default gateway so the clients can access the internet. 
