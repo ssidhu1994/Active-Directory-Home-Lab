@@ -289,7 +289,7 @@ Once you click ok, it will ask you for a admin level account to allow this pc ca
 ![Screenshot 2024-03-16 212854](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/59381e8a-8651-4f58-9cae-63ad45e257cf)
 
 We can see below, our CLIENT1 is now listed under "Computers" in our Active Directory. Under DHCP, we see our DHCP has issued a IP lease to CLIENT1 of 172.16.0.100, which was the starting range we provided earlier.
-This shows our entire network infrastructure is working. Our client has internet access, DHCP is issuing IP leasees, Active directory is documenting users, Domain controller natting and forwarding out to internet and properly return pings sent out.
+This shows our entire network infrastructure is working. Our client has internet access, DHCP is issuing IP leasees, Active directory is documenting users, Domain controller natting and forwarding out to internet and properly return pings sent out. We can consider CLIENT1 as your company-issued laptop accessing your corporate network using your official login credentials.
 
 ![Screenshot 2024-03-16 213356](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/668c1579-110c-40ac-9ebd-f72fea956fe8)
 
