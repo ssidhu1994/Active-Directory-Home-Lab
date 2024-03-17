@@ -369,15 +369,15 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
  <br/>
  <b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b> <br/>
  <br/>
-    $first = $n.Split(" ")[0].ToLower() 
+    $first = $n.Split(" ")[0].ToLower() <br/>
      <br/>
  <b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b> <br/>
  <br/>
-    $last = $n.Split(" ")[1].ToLower() 
+    $last = $n.Split(" ")[1].ToLower() <br/>
      <br/>
  <b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b> <br/>
  <br/>
-    $username = "$($first.Substring(0,1))$($last)".ToLower() 
+    $username = "$($first.Substring(0,1))$($last)".ToLower() <br/>
      <br/>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
      <br/>
