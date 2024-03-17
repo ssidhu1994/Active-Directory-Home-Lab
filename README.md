@@ -47,7 +47,7 @@ In this Lab, we are going to walk through how to create an active directory home
 
 ![Screenshot 2024-03-13 213257](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2d7cdbd2-5c53-4208-8e63-080326530be5)
 
-3. <b>Create a virtual machine for Domain Controller and host active directory</b> <br/>
+3. <b>Create a virtual machine for Domain Controller and host active directory:</b> <br/>
 Call it DC(Domain Controller) for simplicity. <br/>
 Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
 
@@ -55,7 +55,7 @@ Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your
 ![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
 ![Screenshot 2024-03-13 223910](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bb8e3733-cbc7-47f9-9e73-52f92d7ba1b3)
 
-4. <b>Equip virtual machine with two network adapters(NICS)</b>  <br/>
+4. <b>Equip virtual machine with two network adapters(NICS):</b>  <br/>
 Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
 2nd dedicated for internal VMware network(Adapter 2 Internal network)  <br/>
 
@@ -63,7 +63,7 @@ Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT
 ![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
 
 
-5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses</b>  <br/>
+5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses:</b>  <br/>
 
 ![Screenshot 2024-03-13 225535](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e2f21109-2bb1-4b18-a7e0-32a751ec3eab)
 
@@ -113,7 +113,7 @@ For DNS, Once AD is installed, it automatically installs DNS. So we can enter th
 
 ![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
-6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b> <br/>
+6. <b>Name server, establish Active Directory, and create dedicated domain admin account:</b> <br/>
 
 From server manager, select "Add roles and features". Select next x2 and until you see "Select server role". Select "Active Directory Domain Services". Click add features and continue with installation. 
 Select yellow flag from upper right corner and click "Promote this server to a domain controller". Select Add a new forest and call it mydomain.com(Keep it simple for lab). 
@@ -170,7 +170,7 @@ Enter the logon username and password and you should be able to login using the 
 
 ![Screenshot 2024-03-14 165626](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/98c0c392-d498-4519-88c2-0376ad6bbf5a)
 
-7. <b>Configure NAT and Routing for internet access</b>  <br/>
+7. <b>Configure NAT and Routing for internet access:</b>  <br/>
 
 Start by clicking "Add roles and features" > Next x3 > check box "Remote Access". Select Routing(It will automatically select first option) > Add features > Install.
 Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access.
@@ -194,7 +194,7 @@ Select Network address translation (NAT) > select the IPv4 address which we name
 
 ![Screenshot 2024-03-14 172422](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/74f55e12-acce-4ebb-8a7a-c41526a11e08)
 
-8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>  <br/>
+8. <b>Set up DHCP to assign IP addresses to Windows 10 machine:</b>  <br/>
 
 The purpose of setting up DHCP server is to allow windows 10 clients to get an IP address to access the internet.
 Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature and next until install.
@@ -231,7 +231,7 @@ Onces finished, right-click the DHCP server and Authorize. Right-click once more
 
 ![Screenshot 2024-03-16 160553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56de7c23-9b6a-4022-9f4d-48f915b324e9)
 
-9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network</b>  <br/>
+9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network:</b>  <br/>
 
 Next we will create a new VM server which the have windows 10 for our newly created client. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. 
 Once server is created, click settings and under network, change adapter 1 to Internal Network. This is because we configured DHCP address from main controller. This mimics a corprate network.
@@ -297,7 +297,7 @@ This shows our entire network infrastructure is working. Our client has internet
 
 ![Screenshot 2024-03-16 213609](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/52c542e1-19e9-4ae1-b8ef-06cc10b1075f)
 
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script</b>  <br/>
+10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script:</b>  <br/>
 
 
 
