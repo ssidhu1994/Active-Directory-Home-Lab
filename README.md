@@ -39,7 +39,7 @@ In this lab, we are going to walk through how to create an active directory home
 1.<b>Download and install Oracle Virtual Box</b>: <br/>
 ![Screenshot 2024-03-13 212327](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d9e2235f-b49f-4299-87ea-c8dd00a11636)
 
-2.<b>Download Windows 10 and Windows Server 2019 ISO files(Save on desktop)</b>:  <br/>
+2.<b>Download Windows 10 and Windows Server 2019 ISO files (save on desktop)</b>:  <br/>
 
 ![Screenshot 2024-03-13 213228](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/727d2347-4018-4420-8d87-33d0b111d283)
 
@@ -48,16 +48,16 @@ In this lab, we are going to walk through how to create an active directory home
 ![Screenshot 2024-03-13 213257](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2d7cdbd2-5c53-4208-8e63-080326530be5)
 
 3. <b>Create a virtual machine for Domain Controller and host active directory:</b> <br/>
-Call it DC(Domain Controller) for simplicity. <br/>
-Version: Select "Other Windows(64-bit). Adjust Ram & CPU count according to your PC specifications. <br/>
+Call it DC (Domain Controller) for simplicity. <br/>
+ Version: Select "Other Windows (64-bit). Adjust the RAM and CPU count according to your PC specifications.  <br/>
 
 ![Screenshot 2024-03-13 224057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9b29c5a9-86cf-499e-be0c-4850b8f87028)
 ![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
 ![Screenshot 2024-03-13 223910](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bb8e3733-cbc7-47f9-9e73-52f92d7ba1b3)
 
 4. <b>Equip virtual machine with two network adapters(NICS):</b>  <br/>
-Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT)  <br/>
-2nd dedicated for internal VMware network(Adapter 2 Internal network)  <br/>
+Two Nics (network interface controller). One dedicated for internet (Adapter 1 NAT)   <br/>
+2nd dedicated for internal VMware network (Adapter 2 Internal network)  <br/>
 
 ![Screenshot 2024-03-13 224329](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/5573e8e1-a127-48b9-81d7-03a515f60fb0)
 ![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
@@ -69,8 +69,8 @@ Two Nics(Network interface controller). One dedicated for internet(Adapter 1 NAT
 
 ![Screenshot 2024-03-13 225558](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/09a79031-e782-4f81-9b13-c0c490e5ccde)
 
-Select "Windows Server 2019 Standard Evaluation (Desktop Experience) followed by Custom: Install Windows only(advanced):  <br/>
-Create default password of "Password1" We will use this as universal password for lab purposes:  <br/>
+Select "Windows Server 2019 Standard Evaluation (Desktop Experience), followed by Custom: Install Windows only (advanced):   <br/>
+Create a default password of "Password1." We will use this as a universal password for lab purposes:  <br/>
 
 ![Screenshot 2024-03-13 230839](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/268fa95f-d3f0-4dc9-b437-de2d412defc1)
 
