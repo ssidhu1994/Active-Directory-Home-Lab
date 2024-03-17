@@ -272,7 +272,9 @@ We do this by typing ping www.google.ca and we should get a return ping. If we a
 
 ![Screenshot 2024-03-16 211419](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8f67f2a4-8072-45fe-b1e6-562307fc03d1)
 
-Next we connect our local user to the domain server. 
+Next we connect our local user to the domain server. Right-click start > system > Rename this PC(advanced > change. Rename computer to CLIENT1 and click Domain and enter our domain server name mydomain.com.
+Once you click ok, it will ask you for a admin level account to allow this pc called CLIENT1 to join the domain, which we created earlier(Josh Example). Once you login, this CLIENT1 PC is now connected to the domain and any user can join the domain.
+
 
 ![Screenshot 2024-03-16 211831](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c6a9ec3b-09a2-4b52-98dd-871793221a43)
 
