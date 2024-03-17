@@ -343,24 +343,40 @@ Script Explained in depth
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
-# ----- Edit these Variables for your own Use Case ----- #
-</b>This creates the password all the users will use.</b>
-$PASSWORD_FOR_USERS   = "Password1" 
-</b>This is the file which the script will pull the names from.</b>
-$USER_FIRST_LAST_LIST = Get-Content .\names.txt
-# ------------------------------------------------------ #
-</b>Converts the "Password1" to a object that powershell can use as a secure password.</b>
-$password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
-</b>This line creates the OU(Organizational Unitfolder) for the user. Similar to how we created _ADMINS manually.</b>
-New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false
-</b>This foreach loop, loops through the block of code below and will run for each individual user, where n is representation of the current user that is being examined. For example the first n will be our own name.</b>
+# ----- Edit these Variables for your own Use Case ----- #  <br/>
+ <br/>
+</b>This creates the password all the users will use.</b> <br/>
+ <br/>
+$PASSWORD_FOR_USERS   = "Password1"  <br/>
+ <br/>
+</b>This is the file which the script will pull the names from.</b> <br/>
+ <br/>
+$USER_FIRST_LAST_LIST = Get-Content .\names.txt <br/>
+ <br/>
+# ------------------------------------------------------ # <br/>
+ <br/>
+</b>Converts the "Password1" to a object that powershell can use as a secure password.</b> <br/>
+ <br/>
+$password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force <br/>
+ <br/>
+</b>This line creates the OU(Organizational Unitfolder) for the user. Similar to how we created _ADMINS manually.</b> <br/>
+ <br/>
+New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false <br/>
+ <br/>
+</b>This foreach loop, loops through the block of code below and will run for each individual user, where n is representation of the current user that is being examined. For example the first n will be our own name.</b>  <br/>
+ <br/>
 foreach ($n in $USER_FIRST_LAST_LIST) {
-    $first = $n.Split(" ")[0].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b>
-    $last = $n.Split(" ")[1].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b>
-    $username = "$($first.Substring(0,1))$($last)".ToLower() </b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b>
-    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+ <br/>
+    $first = $n.Split(" ")[0].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b> <br/>
+     <br/>
+    $last = $n.Split(" ")[1].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b> <br/>
+     <br/>
+    $username = "$($first.Substring(0,1))$($last)".ToLower() </b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b> <br/>
+     <br/>
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
+     <br/>
     
-    New-AdUser -AccountPassword $password `
+New-AdUser -AccountPassword $password `
                -GivenName $first `
                -Surname $last `
                -DisplayName $username `
