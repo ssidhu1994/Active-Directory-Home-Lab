@@ -383,7 +383,6 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
      <br/>
 
  <b>Creates new user in AD. Similar to how we manually created our own admin user account from earlier.</b> <br/>   
-<br/> 
    New-AdUser -AccountPassword $password <br/>
    -GivenName $first <br/>
    -Surname $last <br/>
