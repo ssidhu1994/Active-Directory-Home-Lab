@@ -381,17 +381,19 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
  <br/>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
      <br/>
-    <br/>
-New-AdUser -AccountPassword $password <br/>
--GivenName $first <br/>
--Surname $last <br/>
--DisplayName $username <br/>
--Name $username <br/>
--EmployeeID $username <br/>
--PasswordNeverExpires $true <br/>
--Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" <br/>
--Enabled $true <br/>
-}
+
+ <b>Creates new user in AD. Similar to how we manually created our own admin user account from earlier.</b> <br/>   
+<br/> 
+   New-AdUser -AccountPassword $password <br/>
+   -GivenName $first <br/>
+   -Surname $last <br/>
+   -DisplayName $username <br/>
+   -Name $username <br/>
+   -EmployeeID $username <br/>
+   -PasswordNeverExpires $true <br/>
+   -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" <br/>
+   -Enabled $true <br/>
+
 
 
 
