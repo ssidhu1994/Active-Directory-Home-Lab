@@ -337,10 +337,9 @@ Lets find the user account we created when we put our own name at the top of the
 ![Screenshot 2024-03-17 101345](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20305d2d-be64-482e-8012-2bbea29bb509)
 ![Screenshot 2024-03-17 101409](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06580138-0ed6-467e-b6cd-8120beff543b)
 
-<b>Script Explained in depth</b>
+<b>Script Explained in depth:</b>
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
-
 
  <br/>
 <b>This creates the password all the users will use.</b> <br/>
@@ -351,7 +350,6 @@ $PASSWORD_FOR_USERS   = "Password1"  <br/>
  <br/>
 $USER_FIRST_LAST_LIST = Get-Content .\names.txt <br/>
  <br/>
-# ------------------------------------------------------ # <br/>
  <br/>
 <b>Converts the "Password1" to a object that powershell can use as a secure password.</b> <br/>
  <br/>
