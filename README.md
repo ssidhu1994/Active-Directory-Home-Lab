@@ -413,12 +413,4 @@ To remove user, right-click user and Delete.
 
 <h2>Congradulations! You have completed your very own Active Directory Lab.</h2>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+
