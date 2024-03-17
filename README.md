@@ -303,7 +303,6 @@ Before we download the script we have to disable "IE Enhanced Security Configura
 Next we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double click names.txt.
 This contains 1000 randomized user names which will be added to AD with the script. Add your own name at the top of the list and click file > save. 
 
-
 ![Screenshot 2024-03-17 094043](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3817ff91-be97-4061-b6ed-f8765f51198a)
 
 ![Screenshot 2024-03-17 094056](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/84fcf935-b5dd-46dd-b805-1c4188bbd628)
@@ -317,6 +316,24 @@ This contains 1000 randomized user names which will be added to AD with the scri
 ![Screenshot 2024-03-17 094652](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3ce1447b-b717-4799-b5fe-fda4087e82c4)
 
 ![Screenshot 2024-03-17 094711](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec955107-da9d-4a27-ae2e-e183e08621fc)
+
+Next is
+
+
+![Screenshot 2024-03-17 100152](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/39eb50f1-f651-47b5-83d3-5c17600e3f32)
+![Screenshot 2024-03-17 100229](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/168daf02-6737-456c-be51-aa0776f40056)
+![Screenshot 2024-03-17 100253](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9a432d67-fb1e-4124-a619-81f176268092)
+![Screenshot 2024-03-17 100416](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8299fe2a-a3d2-492c-9304-ddffc7e758ab)
+![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/1e856a3a-fa57-44f7-a633-0bb12f90cdfb)
+![Screenshot 2024-03-17 101031](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/33310c13-9774-46e6-b66e-00d9fbe6f2b3)
+![Screenshot 2024-03-17 101054](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/92961270-61bd-4aed-8b0a-d82f639aa258)
+![Screenshot 2024-03-17 101109](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2fc87326-c40f-4fcd-b700-01da8bfa5ec6)
+![Screenshot 2024-03-17 101132](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0b41d4fd-ce91-430b-8dca-0f8268bc501d)
+![Screenshot 2024-03-17 101324](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d299d9de-77d8-4454-b809-90418857c5b5)
+![Screenshot 2024-03-17 101345](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20305d2d-be64-482e-8012-2bbea29bb509)
+![Screenshot 2024-03-17 101409](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06580138-0ed6-467e-b6cd-8120beff543b)
+
+
 
 
 
