@@ -392,8 +392,20 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
 
  <b>How to create/edit/remove users manually</b>
 
+To create user, we go to AD > right-click _USERS > New > User. Give the First and last name, along with User logon name(Username). We can use u(user) - j(first letter of firstname) lastname. Give any password you like and check box for which password option you'd like to give the user. 
+![Screenshot 2024-03-17 113926](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/f091a905-e2ca-4b7e-922f-d1a8c6569125)
 
+![Screenshot 2024-03-17 114016](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/89efaf81-42c9-4a5c-a2a7-a5e905146933)
 
+![Screenshot 2024-03-17 114104](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/941029c9-8573-46dd-95c5-91e4168f415a)
+
+![Screenshot 2024-03-17 114119](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/576daca6-9438-40ef-a73d-594bf122dee5)
+
+We can edit the user however we'd like. Right-click the user and it gives you drop down menu of options to choose from. You can disable/Unlock accounts, Reset Passwords, Send Mail, etc. For more in depth, click Properties.
+
+![Screenshot 2024-03-17 114906](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8933cf34-4811-4aca-bf49-cb429b61ac53)
+
+![Screenshot 2024-03-17 115118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fbfcd002-ca3f-4b9a-94c6-921156ed8ec8)
 
 
 <!--
