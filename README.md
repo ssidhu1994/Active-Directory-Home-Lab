@@ -36,10 +36,10 @@ In this lab, we are going to walk through how to create an active directory home
 
 <h2>Program walk-through:</h2>
 
-1.<b>Download and install Oracle Virtual Box</b>: <br/>
+1.<b>Download and install Oracle VirtualBox:</b> <br/>
 ![Screenshot 2024-03-13 212327](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/d9e2235f-b49f-4299-87ea-c8dd00a11636)
 
-2.<b>Download Windows 10 and Windows Server 2019 ISO files (save on desktop)</b>:  <br/>
+2.<b>Download the Windows 10 and Windows Server 2019 ISO files:</b>  <br/>
 
 ![Screenshot 2024-03-13 213228](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/727d2347-4018-4420-8d87-33d0b111d283)
 
@@ -47,7 +47,7 @@ In this lab, we are going to walk through how to create an active directory home
 
 ![Screenshot 2024-03-13 213257](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2d7cdbd2-5c53-4208-8e63-080326530be5)
 
-3. <b>Create a virtual machine for Domain Controller and host active directory:</b> <br/>
+3. <b>Create a virtual machine for the domain controller and host an active directory: </b> <br/>
 Call it DC (Domain Controller) for simplicity. <br/>
  Version: Select "Other Windows (64-bit). Adjust the RAM and CPU count according to your PC specifications.  <br/>
 
@@ -55,7 +55,7 @@ Call it DC (Domain Controller) for simplicity. <br/>
 ![Screenshot 2024-03-13 223504](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cf2ff8f0-f0c3-4b1c-949b-b48c61acd4ee)
 ![Screenshot 2024-03-13 223910](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/bb8e3733-cbc7-47f9-9e73-52f92d7ba1b3)
 
-4. <b>Equip virtual machine with two network adapters(NICS):</b>  <br/>
+4. <b>Equip a virtual machine with two network adapters (NICS): </b>  <br/>
 Two Nics (network interface controller). One dedicated for internet (Adapter 1 NAT)   <br/>
 2nd dedicated for internal VMware network (Adapter 2 Internal network)  <br/>
 
@@ -63,7 +63,7 @@ Two Nics (network interface controller). One dedicated for internet (Adapter 1 N
 ![Screenshot 2024-03-13 224346](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/0307c855-8429-4cad-bc8b-018df1004909)
 
 
-5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses:</b>  <br/>
+5. <b>Install Windows Server 2019 on the domain controller and assign IP addresses: </b>  <br/>
 
 ![Screenshot 2024-03-13 225535](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e2f21109-2bb1-4b18-a7e0-32a751ec3eab)
 
@@ -111,7 +111,7 @@ In X_INTERNAL_X adapter options, right-click and select properties; double-click
 
 ![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
-6. <b>Name server, establish Active Directory, and create dedicated domain admin account:</b> <br/>
+6. <b>Name the server, establish Active Directory, and create a dedicated domain admin account: </b> <br/>
 
 From server manager, select "Add roles and features." Select next x2 until you see "Select server role." Select "Active Directory Domain Services." Click Add Features and continue with the installation. Select the yellow flag in the upper right corner and click "Promote this server to a domain controller." Select Add a New Forest and call it mydomain.com (keep it simple for lab). For password we will use the same "Password1" and disable "Create DNS delegation." Click next until installation is complete, after which the VM will restart.
 
@@ -161,7 +161,7 @@ To use our newly created admin account, log out of the account from start menu, 
 
 ![Screenshot 2024-03-14 165626](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/98c0c392-d498-4519-88c2-0376ad6bbf5a)
 
-7. <b>Configure NAT and Routing for internet access:</b>  <br/>
+7. <b>Configure NAT and routing for internet access: </b>  <br/>
 
 Start by clicking "Add roles and features" > Next x3 > checkbox "Remote Access." Select Routing (it will automatically select the first option) > Add Features > Install. Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access. Select Network address translation (NAT) > select the IPv4 address, which we named earlier to INTERNET. The server should have an upward green arrow and be connected to internet.
 
@@ -183,7 +183,7 @@ Start by clicking "Add roles and features" > Next x3 > checkbox "Remote Access."
 
 ![Screenshot 2024-03-14 172422](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/74f55e12-acce-4ebb-8a7a-c41526a11e08)
 
-8. <b>Set up DHCP to assign IP addresses to Windows 10 machine:</b>  <br/>
+8. <b>Set up DHCP to assign IP addresses to a Windows 10 machine: </b>  <br/>
 
 The purpose of setting up the DHCP server is to allow Windows 10 clients to get an IP address to access the internet. Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature, and next until install. Next, click Tools > DHCP. You will notice the red down arrow, which indicates the server is down. Right-click IPv4 and click "New Scope." We will name the scope after the IP range, 172.16.0.100–200. Next, we enter the start address (172.16.0.100) and the end address (172.16.0.200). Length we will change to 24 so we have a subnet mask of 255.255.255.0. Skip adding any exclusions. The lease duration is how long a client can use the IP address from the server before it needs to be refreshed. Click "Yes, I want to configure these options now." We want to enable this because we want to configure which server to use for DNS and the default gateway so the clients can access the internet. For Router, we will add 172.16.0.1. This is because we configured NAT on the domain controller, and the domain controller has routing configured. After clicking, add, followed by next, until you finish. Once finished, right-click the DHCP server and authorize. Right-click once more and click refresh. You should now see the IPv4 and IPv6 turn green with an upward arrow.
 
@@ -213,7 +213,7 @@ The purpose of setting up the DHCP server is to allow Windows 10 clients to get 
 
 ![Screenshot 2024-03-16 160553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56de7c23-9b6a-4022-9f4d-48f915b324e9)
 
-9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network:</b>  <br/>
+9. <b>Create another virtual machine that will host Windows 10. Create a local user and connect to a private network: </b>  <br/>
 
 Next, we will create a new VM server with Windows 10. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. Once the server is created, click settings, and under network, change adapter 1 to Internal Network. This is because we configured the DHCP address on the main controller. This mimics a corporative network. Now start the new VM, browse to the location where you put the Windows.iso file, and click next. When it asks you to activate Windows, click "I don't have a product key" and follow the on-screen instructions. We will install Windows 10 Pro because it can join the domain, but Home can't. Custom install followed by next. We can skip all the setup options; if it asks for network, click "I don't have internet,"  followed by "continue with limited setup." Give a username of "user" for simplicity and no password; this will be our local user (later called CLIENT1), which we will connect to our domain server.
 
@@ -271,7 +271,7 @@ As we can see below, our CLIENT1 is now listed under "Computers" in our Active D
 
 ![Screenshot 2024-03-16 213609](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/52c542e1-19e9-4ae1-b8ef-06cc10b1075f)
 
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users manually:</b>  <br/>
+10. <b>Bonus: Run a PowerShell script to create 1,000 users in Active Directory and learn how to create, edit, and remove users manually: </b>  <br/>
 
 Before we download the script, we have to disable "IE Enhanced Security Configuration." If we don't disable this, the browser will keep asking for permission to load any link (this should only be done in a lab environment). Next, we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double-click names.txt. This contains 1000 randomized user names, which will be added to AD with the script. Add your own name at the top of the list and click File > Save.
 
