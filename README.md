@@ -299,6 +299,28 @@ This shows our entire network infrastructure is working. Our client has internet
 
 10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script:</b>  <br/>
 
+![Screenshot 2024-03-17 094043](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3817ff91-be97-4061-b6ed-f8765f51198a)
+
+![Screenshot 2024-03-17 094056](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/84fcf935-b5dd-46dd-b805-1c4188bbd628)
+
+![Screenshot 2024-03-17 094106](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/6c9967ed-30c9-436b-9d05-0057e6adf6ec)
+
+![Screenshot 2024-03-17 094510](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/cb545d5c-839e-4e2a-b098-87ea47a4a28a)
+
+![Screenshot 2024-03-17 094534](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/24347aff-153c-4fc4-a047-1d34e6a27f95)
+
+![Screenshot 2024-03-17 094652](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3ce1447b-b717-4799-b5fe-fda4087e82c4)
+
+![Screenshot 2024-03-17 094711](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec955107-da9d-4a27-ae2e-e183e08621fc)
+
+
+
+
+
+
+
+
+
 
 
 
