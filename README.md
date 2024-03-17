@@ -15,7 +15,7 @@ In this Lab, we are going to walk through how to create an active directory home
 7. <b>Configure NAT and Routing for internet access</b>
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
 9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network</b>
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create users without script</b>
+10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script</b>
 
 
 <h2>Languages and Utilities Used</h2>
