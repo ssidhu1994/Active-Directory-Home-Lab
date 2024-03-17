@@ -15,7 +15,7 @@ In this Lab, we are going to walk through how to create an active directory home
 7. <b>Configure NAT and Routing for internet access</b>
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
 9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network</b>
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script</b>
+10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users manually</b>
 
 
 <h2>Languages and Utilities Used</h2>
@@ -297,7 +297,7 @@ This shows our entire network infrastructure is working. Our client has internet
 
 ![Screenshot 2024-03-16 213609](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/52c542e1-19e9-4ae1-b8ef-06cc10b1075f)
 
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users without script:</b>  <br/>
+10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users manually:</b>  <br/>
 
 Before we download the script we have to disable "IE Enhanced Security Configuration". If we don't disable this, the browser will keep asking for permission to load any link(This should only be done in lab environment).
 Next we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double click names.txt.
@@ -390,7 +390,7 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
    -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" <br/>
    -Enabled $true <br/>
 
-
+ <b>How to create/edit/remove users manually</b>
 
 
 
