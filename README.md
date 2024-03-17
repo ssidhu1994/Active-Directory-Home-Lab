@@ -320,7 +320,7 @@ This contains 1000 randomized user names which will be added to AD with the scri
 In order to run the script, we must open powershell. Bottom left, click start > Windows Powershell > right click Windows Powershell ISE > more > Run as administrator.
 Top left, click open folder > desktop > extracted folder > 1_CREATE_USERS. Before we run script we have to give Powershell permission to run scripts(This is a security feature and should only be in lab).
 In bottom blue box type Set-ExecutionPolicy Unrestricted. Next we have to tell Powershell the location of the script, which is the folder on the desktop.
-We do is by typing CD(change directory)\users\yourusername\desktop\AD_PS-master and hit enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go.
+We do this by typing CD(change directory)\users\yourusername\desktop\AD_PS-master and hit enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go.
 Next we click play button and the script will ask if you're sure you want to run this, click run once and it should begin adding users to AD.
 
 ![Screenshot 2024-03-17 100152](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/39eb50f1-f651-47b5-83d3-5c17600e3f32)
