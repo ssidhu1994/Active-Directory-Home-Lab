@@ -14,7 +14,7 @@ In this Lab, we are going to walk through how to create an active directory home
 6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b>
 7. <b>Configure NAT and Routing for internet access</b>
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
-9. <b>Create new client user. Create another virtual machine, install Windows 10, connect to private network</b>
+9. <b>Create new client user. Create another virtual machine which will host Windows 10, connect to private network</b>
 10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory</b>
 
 
@@ -235,13 +235,6 @@ Onces finished, right-click the DHCP server and Authorize. Right-click once more
 
 To create new user
 
-
-
-
-
-
-
-
 Next we will create a new VM server which the have windows 10 for our newly created client. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. 
 Once server is created, click settings and under network, change adapter 1 to Internal Network. This is because we configured DHCP address from main controller. This mimics a corprate network.
 Now start the new VM and browse to the location you put the Windows.iso file and click next. When it askes to activate windows, click "I don't have a product key", and follow the on screen instructions.
@@ -264,12 +257,13 @@ We will install Windows 10 pro because it can join the domain, home can't. Custo
 
 ![Screenshot 2024-03-16 183337](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/62a7b777-333d-48aa-bd2e-14dbd4ddc7aa)
 
+![Screenshot 2024-03-16 184430](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ed8d6ebb-5e83-4022-95f9-4dcf4c165736)
 
+![Screenshot 2024-03-16 184524](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8e7fa38f-c079-467b-8de3-86ee7e04b33f)
 
+![Screenshot 2024-03-16 184541](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/67f73606-8309-4a33-9df1-dc305b25fcb5)
 
-
-
-
+![Screenshot 2024-03-16 184553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51530e15-73ad-4c53-9123-3a216b78bc04)
 
 
 
