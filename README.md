@@ -343,7 +343,7 @@ Script Explained in depth
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
-# ----- Edit these Variables for your own Use Case ----- #  <br/>
+
  <br/>
 <b>This creates the password all the users will use.</b> <br/>
  <br/>
