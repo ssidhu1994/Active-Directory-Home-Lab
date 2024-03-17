@@ -272,8 +272,7 @@ We do this by typing ping www.google.ca and we should get a return ping. If we a
 
 ![Screenshot 2024-03-16 211419](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8f67f2a4-8072-45fe-b1e6-562307fc03d1)
 
-
-
+Next we connect our local user to the domain server. 
 
 
 
