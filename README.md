@@ -350,7 +350,6 @@ $PASSWORD_FOR_USERS   = "Password1"  <br/>
  <br/>
 $USER_FIRST_LAST_LIST = Get-Content .\names.txt <br/>
  <br/>
- <br/>
 <b>Converts the "Password1" to a object that powershell can use as a secure password.</b> <br/>
  <br/>
 $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force <br/>
