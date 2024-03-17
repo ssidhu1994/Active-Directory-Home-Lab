@@ -163,7 +163,7 @@ To use our newly created admin account, log out of the account from start menu, 
 
 7. <b>Configure NAT and routing for internet access: </b>  <br/>
 
-Start by clicking "Add roles and features" > Next x3 > checkbox "Remote Access." Select Routing (it will automatically select the first option) > Add Features > Install. Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access. Select Network address translation (NAT) > select the IPv4 address, which we named earlier to INTERNET. The server should have an upward green arrow and be connected to internet.
+Start by clicking "Add roles and features" > Next x3 > checkbox "Remote Access." Select Routing (it will automatically select the first option) > Add Features > Install. Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access. Select Network address translation (NAT) > select the IPv4 address, which we named earlier to INTERNET. The server should have an upward green arrow and be connected to the internet.
 
 ![Screenshot 2024-03-14 170057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fdb96cbb-7866-472d-82aa-56af9b639e17)
 
