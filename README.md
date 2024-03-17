@@ -337,8 +337,6 @@ Lets find the user account we created when we put our own name at the top of the
 ![Screenshot 2024-03-17 101345](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20305d2d-be64-482e-8012-2bbea29bb509)
 ![Screenshot 2024-03-17 101409](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06580138-0ed6-467e-b6cd-8120beff543b)
 
-
-
 Script Explained in depth
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
