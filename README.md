@@ -378,18 +378,19 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
     $username = "$($first.Substring(0,1))$($last)".ToLower() <br/>
      <br/>
  <b>Gives graphical output for us to see the script running in realtime. Gives background and foreground colors.</b> <br/>
+ <br/>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
      <br/>
-    
-New-AdUser -AccountPassword $password `
-               -GivenName $first `
-               -Surname $last `
-               -DisplayName $username `
-               -Name $username `
-               -EmployeeID $username `
-               -PasswordNeverExpires $true `
-               -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
-               -Enabled $true
+    <br/>
+New-AdUser -AccountPassword $password <br/>
+-GivenName $first <br/>
+-Surname $last <br/>
+-DisplayName $username <br/>
+-Name $username <br/>
+-EmployeeID $username <br/>
+-PasswordNeverExpires $true <br/>
+-Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" <br/>
+-Enabled $true <br/>
 }
 
 
