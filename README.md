@@ -353,7 +353,7 @@ $USER_FIRST_LAST_LIST = Get-Content .\names.txt
 $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
 </b>This line creates the OU(Organizational Unitfolder) for the user. Similar to how we created _ADMINS manually.</b>
 New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false
-
+</b>This foreach loop, loops through the block of code below and will run for each individual user, where n is representation of the current user that is being examined. For example the first n will be our own name.</b>
 foreach ($n in $USER_FIRST_LAST_LIST) {
     $first = $n.Split(" ")[0].ToLower()
     $last = $n.Split(" ")[1].ToLower()
