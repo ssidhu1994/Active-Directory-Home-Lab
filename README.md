@@ -1,21 +1,21 @@
 <h1>Active Directory Home Lab</h1>
 
 <h2>Description</h2>
-In this Lab, we are going to walk through how to create an active directory home lab environment using Oracle Virtual Box. Configuring and running this lab will help develop our understanding of how active directory and windows networking works.
+In this lab, we are going to walk through how to create an active directory home lab environment using Oracle Virtual Box. Configuring and running this lab will help develop our understanding of how active directory and Windows networking work. 
 <br />
 
 <h2>Lab Overview</h2>
 
-1. <b>Download and install Oracle Virtual Box</b> 
-2. <b>Download Windows 10 and Windows Server 2019 ISO files</b>
-3. <b>Create a virtual machine for Domain Controller and host active directory</b>
-4. <b>Equip virtual machine with two network adapters(NICS)</b>
-5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses</b>
-6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b>
-7. <b>Configure NAT and Routing for internet access</b>
-8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
-9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network</b>
-10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users manually</b>
+1. <b>Download and install Oracle VirtualBox.</b> 
+2. <b>Download the Windows 10 and Windows Server 2019 ISO files.</b>
+3. <b>Create a virtual machine for the domain controller and host an active directory.</b>
+4. <b>Equip a virtual machine with two network adapters (NICS).</b>
+5. <b>Install Windows Server 2019 on the domain controller and assign IP addresses.</b>
+6. <b>Name the server, establish Active Directory, and create a dedicated domain admin account.</b>
+7. <b>Configure NAT and routing for internet access.</b>
+8. <b>Set up DHCP to assign IP addresses to a Windows 10 machine.</b>
+9. <b>Create another virtual machine that will host Windows 10. Create a local user and connect to a private network.</b>
+10. <b>Bonus: Run a PowerShell script to create 1,000 users in Active Directory and learn how to create, edit, and remove users manually.</b>
 
 
 <h2>Languages and Utilities Used</h2>
