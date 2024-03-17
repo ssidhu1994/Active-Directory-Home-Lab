@@ -129,11 +129,7 @@ From server manager, select "Add roles and features." Select next x2 until you s
 
 ![Screenshot 2024-03-14 160855](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c29cbf89-716e-467e-8e47-f5357c172c94)
 
-To create dedicated admin account, bottom left click start > Windows Administrative Tools > Active Directory Users and Computers.
-Under forest our newly created domain, right click > New > Organizational units(Fancy way of saying folder) and name it _ADMINS.
-Once we created _ADMINS, right-click again > New > user. Create the user you would like. For User logon name, industry standard is a- first letter of firstname followed by lastname.
-For password use same "Password1" and check "Password never expires" for lab purpose. You should now see the new user, but it's not a admin yet.
-Next right-click new user > Properties > Member Of tab > Add > in "Enter the object names to select, type "domain admins" and click check name followed by ok. Click apply and ok to finalize.
+To create a dedicated admin account, bottom-left-click Start > Windows Administrative Tools > Active Directory Users and Computers. Under forest of our newly created domain, right-click > New > Organizational Units (a fancy way of saying folder) and name it _ADMINS. Once we created _ADMINS, right-click again > New > User. Create the user you would like. For the user logon name, the industry standard is the first letter of the first name followed by the last name. For password use the same "Password1" and check "Password never expires" for lab purposes. You should now see the new user, but it's not an admin yet. Next, right-click new user > Properties > Member Of tab > Add > "Enter the object names to select, type "domain admins," and click check name followed by OK. Click Apply and OK to finalize.
 
 ![Screenshot 2024-03-14 162337](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/37694986-7444-4352-ba5d-203128d0456d)
 
@@ -157,8 +153,7 @@ Next right-click new user > Properties > Member Of tab > Add > in "Enter the obj
 
 ![Screenshot 2024-03-14 164130](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ac1478af-378c-4ec7-a130-1d6f9cddb68b)
 
-To use our newly created admin account logout of account from start menu, but this time select "Other user". 
-Enter the logon username and password and you should be able to login using the new admin account
+To use our newly created admin account, log out of the account from start menu, but this time select "Other user." Enter the logon username and password, and you should be able to login using the new admin account.
 
 ![Screenshot 2024-03-14 165549](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c19ed6e8-e12a-4f89-a77e-c39ba18a88ee)
 
@@ -168,9 +163,7 @@ Enter the logon username and password and you should be able to login using the 
 
 7. <b>Configure NAT and Routing for internet access:</b>  <br/>
 
-Start by clicking "Add roles and features" > Next x3 > check box "Remote Access". Select Routing(It will automatically select first option) > Add features > Install.
-Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access.
-Select Network address translation (NAT) > select the IPv4 address which we named earlier to INTERNET. Server should have a upwards green arrow and connected to internet
+Start by clicking "Add roles and features" > Next x3 > checkbox "Remote Access." Select Routing (it will automatically select the first option) > Add Features > Install. Click tools from upper right corner > Routing and Remote Access > right-click server name > Configure and Enable Routing and Remote Access. Select Network address translation (NAT) > select the IPv4 address, which we named earlier to INTERNET. The server should have an upward green arrow and be connected to internet.
 
 ![Screenshot 2024-03-14 170057](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fdb96cbb-7866-472d-82aa-56af9b639e17)
 
@@ -192,14 +185,7 @@ Select Network address translation (NAT) > select the IPv4 address which we name
 
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine:</b>  <br/>
 
-The purpose of setting up DHCP server is to allow windows 10 clients to get an IP address to access the internet.
-Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature and next until install.
-Next Click Tools > DHCP. You will notice the red down arrow indicating the server is down. Right click IPv4 and click "New Scope".
-We will name the scope after the IP range, 172.16.0.100-200. Next we enter the start address(172.16.0.100) & end address(172.16.0.200).
-Length we will change to 24 so we have Subnet mask of 255.255.255.0. Skip adding any exclusions. The lease duration is how long a client can use the IP address from the server before it needs to be refreshed.
-CLick "Yes, I want to configure these options now". We want to enable this because we want to configure which server to use for DNS & default gateway so the clients can access the internet. 
-For Router, we will add 172.16.0.1. This is because we configured NAT on the domain controller and the domain controller has routing configured. After click add followed by next until finish.
-Onces finished, right-click the DHCP server and Authorize. Right-click once more and click refresh. You should now see the IPv4 & IPv6 turn green with upwards arrow.
+The purpose of setting up the DHCP server is to allow Windows 10 clients to get an IP address to access the internet. Start by going to add roles and features > Next x3 > check box "DHCP Server", add feature, and next until install. Next, click Tools > DHCP. You will notice the red down arrow, which indicates the server is down. Right-click IPv4 and click "New Scope." We will name the scope after the IP range, 172.16.0.100–200. Next, we enter the start address (172.16.0.100) and the end address (172.16.0.200). Length we will change to 24 so we have a subnet mask of 255.255.255.0. Skip adding any exclusions. The lease duration is how long a client can use the IP address from the server before it needs to be refreshed. Click "Yes, I want to configure these options now." We want to enable this because we want to configure which server to use for DNS and the default gateway so the clients can access the internet. For Router, we will add 172.16.0.1. This is because we configured NAT on the domain controller, and the domain controller has routing configured. After clicking, add, followed by next, until you finish. Once finished, right-click the DHCP server and authorize. Right-click once more and click refresh. You should now see the IPv4 and IPv6 turn green with an upward arrow.
 
 ![Screenshot 2024-03-16 154528](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/7ebba184-7aa6-482e-893a-2a5c6385d0bc)
 
