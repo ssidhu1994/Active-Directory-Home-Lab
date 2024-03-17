@@ -301,7 +301,7 @@ This shows our entire network infrastructure is working. Our client has internet
 
 Before we download the script we have to disable "IE Enhanced Security Configuration". If we don't disable this, the browser will keep asking for permission to load any link(This should only be done in lab environment).
 Next we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double click names.txt.
-This contains the names of 1000 users we will add with script. Add your own name at the top of the list and click file > save. 
+This contains 1000 randomized user names which will be added to AD with the script. Add your own name at the top of the list and click file > save. 
 
 
 ![Screenshot 2024-03-17 094043](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3817ff91-be97-4061-b6ed-f8765f51198a)
