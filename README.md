@@ -322,6 +322,8 @@ Top left, click open folder > desktop > extracted folder > 1_CREATE_USERS. Befor
 In bottom blue box type Set-ExecutionPolicy Unrestricted. Next we have to tell Powershell the location of the script, which is the folder on the desktop.
 We do this by typing CD(change directory)\users\yourusername\desktop\AD_PS-master and hit enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go.
 Next we click play button and the script will ask if you're sure you want to run this, click run once and it should begin adding users to AD.
+Once script is finished, we can check AD to see our list of users created. Go to AD and right click the server > refresh. Click _USERS and you should see all the newly created users. 
+Lets find the user account we created when we put our own name at the top of the list. Right-click the server > Find > In name, type the name you gave in name.txt file. Under search results we 2 users. One is our admin account we created earlier and other is the new user account created by the script.
 
 ![Screenshot 2024-03-17 100152](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/39eb50f1-f651-47b5-83d3-5c17600e3f32)
 ![Screenshot 2024-03-17 100229](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/168daf02-6737-456c-be51-aa0776f40056)
