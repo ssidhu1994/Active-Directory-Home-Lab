@@ -273,9 +273,7 @@ As we can see below, our CLIENT1 is now listed under "Computers" in our Active D
 
 10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory and how to create/edit/remove users manually:</b>  <br/>
 
-Before we download the script we have to disable "IE Enhanced Security Configuration". If we don't disable this, the browser will keep asking for permission to load any link(This should only be done in lab environment).
-Next we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double click names.txt.
-This contains 1000 randomized user names which will be added to AD with the script. Add your own name at the top of the list and click file > save. 
+Before we download the script, we have to disable "IE Enhanced Security Configuration." If we don't disable this, the browser will keep asking for permission to load any link (this should only be done in a lab environment). Next, we download the script, which can be found at github.com/joshmadakor1/AD_PS/archive/master.zip. Save and extract the zip file on your desktop. Open the extracted folder and double-click names.txt. This contains 1000 randomized user names, which will be added to AD with the script. Add your own name at the top of the list and click File > Save.
 
 ![Screenshot 2024-03-17 094043](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/3817ff91-be97-4061-b6ed-f8765f51198a)
 
@@ -291,13 +289,7 @@ This contains 1000 randomized user names which will be added to AD with the scri
 
 ![Screenshot 2024-03-17 094711](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec955107-da9d-4a27-ae2e-e183e08621fc)
 
-In order to run the script, we must open powershell. Bottom left, click start > Windows Powershell > right click Windows Powershell ISE > more > Run as administrator.
-Top left, click open folder > desktop > extracted folder > 1_CREATE_USERS. Before we run script we have to give Powershell permission to run scripts(This is a security feature and should only be in lab).
-In bottom blue box type Set-ExecutionPolicy Unrestricted. Next we have to tell Powershell the location of the script, which is the folder on the desktop.
-We do this by typing CD(change directory)\users\yourusername\desktop\AD_PS-master and hit enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go.
-Next we click play button and the script will ask if you're sure you want to run this, click run once and it should begin adding users to AD.
-Once script is finished, we can check AD to see our list of users created. Go to AD and right click the server > refresh. Click _USERS and you should see all the newly created users. 
-Lets find the user account we created when we put our own name at the top of the list. Right-click the server > Find > In name, type the name you gave in name.txt file. Under search results we 2 users. One is our admin account we created earlier and other is the new user account created by the script. Congradulations, you have 1000 users on your AD who you can use to login to the domain. We can create,edit or delete these users as we like.
+In order to run the script, we must open PowerShell. Bottom left, click start > Windows Powershell > right click Windows Powershell ISE > more > Run as administrator. Top left, click open folder > desktop > extracted folder > 1_CREATE_USERS. Before we run scripts, we have to give PowerShell permission to run scripts (this is a security feature and should only be in the lab). In the bottom blue box, type Set-ExecutionPolicy Unrestricted. Next, we have to tell PowerShell the location of the script, which is the folder on the desktop. We do this by typing CD (change directory)\users\yourusername\desktop\AD_PS-master and hitting enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go. Next, we click the play button, and the script will ask if you're sure you want to run this. Click run once, and it should begin adding users to AD. Once the script is finished, we can check AD to see the list of users created. Go to AD and right-click the server > refresh. Click _USERS, and you should see all the newly created users. Let's find the user account we created when we put our own name at the top of the list. Right-click the server > Find > In name, type the name you gave in the name.txt file. There are two users listed under the search results. One is our admin account we created earlier, and the other is the new user account created by the script. Congratulations! You have 1000 users on your AD who you can use to login to the domain. We can create, edit, or delete these users as we like.
 
 ![Screenshot 2024-03-17 100152](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/39eb50f1-f651-47b5-83d3-5c17600e3f32)
 ![Screenshot 2024-03-17 100229](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/168daf02-6737-456c-be51-aa0776f40056)
@@ -311,12 +303,12 @@ Lets find the user account we created when we put our own name at the top of the
 ![Screenshot 2024-03-17 101345](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20305d2d-be64-482e-8012-2bbea29bb509)
 ![Screenshot 2024-03-17 101409](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06580138-0ed6-467e-b6cd-8120beff543b)
 
-<b>Script Explained in depth:</b>
+<b>Script explained in depth:</b>
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
  <br/>
-<b>This creates the password all the users will use.</b> <br/>
+<b>This is the file from which the script will pull the names.</b> <br/>
  <br/>
 $PASSWORD_FOR_USERS   = "Password1"  <br/>
  <br/>
@@ -324,7 +316,7 @@ $PASSWORD_FOR_USERS   = "Password1"  <br/>
  <br/>
 $USER_FIRST_LAST_LIST = Get-Content .\names.txt <br/>
  <br/>
-<b>Converts the "Password1" to a object that powershell can use as a secure password.</b> <br/>
+<b>This line converts "Password1" to an object that PowerShell can use as a secure password.</b> <br/>
  <br/>
 $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force <br/>
  <br/>
@@ -332,28 +324,28 @@ $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force <br/>
  <br/>
 New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false <br/>
  <br/>
-<b>Foreach loop, loops through the block of code below and will run for each individual user, where n is representation of the current user that is being examined. For example the first n will be our own name.</b>  <br/>
+<b>Foreach loop loops through the block of code below and will run for each individual user, where n is the representation of the current user that is being examined. For example, the first n will be our own name.</b>  <br/>
  <br/>
 foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
  <br/>
- <b>Splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b> <br/>
+ <b>Splits (adds space between first and last name) the username and stores it in the first variable (0 is the first element in an array).</b> <br/>
  <br/>
     $first = $n.Split(" ")[0].ToLower() <br/>
      <br/>
- <b>Splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b> <br/>
+ <b>Splits (adds space between first and last name) the username and stores it in the last variable (1 is the second element in an array).</b> <br/>
  <br/>
     $last = $n.Split(" ")[1].ToLower() <br/>
      <br/>
- <b>Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase</b> <br/>
+ <b>The following line concatenates two things: it takes the first letter from the first variable, adds it to lastname, and then changes it to lowercase.</b> <br/>
  <br/>
     $username = "$($first.Substring(0,1))$($last)".ToLower() <br/>
      <br/>
- <b>Gives graphical output for us to see the script running in realtime. Gives background and foreground colors.</b> <br/>
+ <b>Gives us graphical output so we can see the script running in real time. Gives the background and foreground colours.</b> <br/>
  <br/>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
      <br/>
 
- <b>Creates new user in AD. Similar to how we manually created our own admin user account from earlier.</b> <br/>   
+ <b>Creates a new user in AD. Similar to how we manually created our own admin user account earlier.</b> <br/>   
    New-AdUser -AccountPassword $password <br/>
    -GivenName $first <br/>
    -Surname $last <br/>
@@ -366,7 +358,8 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
 
  <b>How to create/edit/remove users manually</b>
 
-To create user, we go to AD > right-click _USERS > New > User. Give the First and last name, along with User logon name(Username). We can use u(user) - j(first letter of firstname) lastname. Give any password you like and check box for which password option you'd like to give the user. 
+To create a user, we go to AD > right-click _USERS > New > User. Give the first and last name, along with the user logon name (username). We can use u (user) and j (first letter of first name) as last names. Give any password you like, and check the box for which password option you'd like to give the user.
+
 ![Screenshot 2024-03-17 113926](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/f091a905-e2ca-4b7e-922f-d1a8c6569125)
 
 ![Screenshot 2024-03-17 114016](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/89efaf81-42c9-4a5c-a2a7-a5e905146933)
@@ -375,13 +368,13 @@ To create user, we go to AD > right-click _USERS > New > User. Give the First an
 
 ![Screenshot 2024-03-17 114119](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/576daca6-9438-40ef-a73d-594bf122dee5)
 
-We can edit the user however we'd like. Right-click the user, it gives you drop down menu of options to choose from. You can disable/unlock accounts, reset passwords, send mail, etc. For more in depth options, click properties.
+We can edit the user however we'd like. Right-click the user, and it will give you a drop-down menu of options to choose from. You can disable or unlock accounts, reset passwords, send mail, etc. For more in-depth options, click properties.
 
 ![Screenshot 2024-03-17 114906](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8933cf34-4811-4aca-bf49-cb429b61ac53)
 
 ![Screenshot 2024-03-17 115118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/fbfcd002-ca3f-4b9a-94c6-921156ed8ec8)
 
-To remove user, right-click user and Delete.
+To remove a user, right-click the user and select Delete.
 
 ![Screenshot 2024-03-17 121323](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/81af9181-5ca7-432a-9dd4-4fa44a7ef515)
 
