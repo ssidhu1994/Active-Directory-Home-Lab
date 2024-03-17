@@ -215,10 +215,7 @@ The purpose of setting up the DHCP server is to allow Windows 10 clients to get 
 
 9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network:</b>  <br/>
 
-Next we will create a new VM server which the have windows 10 for our newly created client. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. 
-Once server is created, click settings and under network, change adapter 1 to Internal Network. This is because we configured DHCP address from main controller. This mimics a corprate network.
-Now start the new VM and browse to the location you put the Windows.iso file and click next. When it askes to activate windows, click "I don't have a product key", and follow the on screen instructions.
-We will install Windows 10 pro because it can join the domain, home can't. Custom install followed by next. We can skip all the setup options, if it asks for network, click "I don't have internet", followed by "continue with limited setup". Give a username of "user" for simplicity and no password, this will be our local user(Later called CLIENT1) which we will connect to our domain server.
+Next, we will create a new VM server with Windows 10. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. Once the server is created, click settings, and under network, change adapter 1 to Internal Network. This is because we configured the DHCP address on the main controller. This mimics a corporative network. Now start the new VM, browse to the location where you put the Windows.iso file, and click next. When it asks you to activate Windows, click "I don't have a product key" and follow the on-screen instructions. We will install Windows 10 Pro because it can join the domain, but Home can't. Custom install followed by next. We can skip all the setup options; if it asks for network, click "I don't have internet,"  followed by "continue with limited setup." Give a username of "user" for simplicity and no password; this will be our local user (later called CLIENT1), which we will connect to our domain server.
 
 ![Screenshot 2024-03-16 182648](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec9872ea-06f5-4a77-9f5d-178346cc20c3)
 
@@ -244,9 +241,7 @@ We will install Windows 10 pro because it can join the domain, home can't. Custo
 
 ![Screenshot 2024-03-16 184553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51530e15-73ad-4c53-9123-3a216b78bc04)
 
-Once we login, we can check if our new user has internet access. Start by clicking start button bottom left and type "CMD". Type IPCONFIG, and you should see list of IP addresses. 
-If our default gateway shows 172.16.0.1(Which is our DNS server), we are good to go. We can test this further by pinging any server on the internet, for example www.google.ca.
-We do this by typing ping www.google.ca and we should get a return ping. If we are not able to see the default gateway ip or ping to the internet, we must troubleshoot the routing and remote access.
+Once we login, we can check if our new user has internet access. Start by clicking the start button on the bottom left and type "CMD." Type IPCONFIG, and you should see a list of IP addresses. If our default gateway shows 172.16.0.1 (which is our DNS server), we are good to go. We can test this further by pinging any server on the internet, for example, www.google.ca. We do this by typing ping www.google.ca, and we should get a return ping. If we are not able to see the default gatewayIPp or ping to the internet, we must troubleshoot the routing and remote access.
 
 ![Screenshot 2024-03-16 211334](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8d55beab-0ad1-4400-87a2-bc4c9c7a3bfa)
 
@@ -254,9 +249,7 @@ We do this by typing ping www.google.ca and we should get a return ping. If we a
 
 ![Screenshot 2024-03-16 211419](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8f67f2a4-8072-45fe-b1e6-562307fc03d1)
 
-Next we connect our local user to the domain server. Right-click start > system > Rename this PC(advanced > change. Rename computer to CLIENT1 and click Domain and enter our domain server name mydomain.com.
-Once you click ok, it will ask you for a admin level account to allow this pc called CLIENT1 to join the domain, which we created earlier(Josh Example). Once you login, this CLIENT1 PC is now connected to the domain and any user can join the domain.
-
+Next, we connect our local user to the domain server. Right-click start > system > rename this PC (advanced > change). Rename the computer to CLIENT1, click Domain, and enter our domain server name, mydomain.com. Once you click OK, it will ask you for an admin-level account to allow this PC called CLIENT1 to join the domain, which we created earlier (Josh Example). Once you login, this CLIENT1 PC is now connected to the domain, and any user can join the domain.
 
 ![Screenshot 2024-03-16 211831](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c6a9ec3b-09a2-4b52-98dd-871793221a43)
 
@@ -270,8 +263,7 @@ Once you click ok, it will ask you for a admin level account to allow this pc ca
 
 ![Screenshot 2024-03-16 212854](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/59381e8a-8651-4f58-9cae-63ad45e257cf)
 
-We can see below, our CLIENT1 is now listed under "Computers" in our Active Directory. Under DHCP, we see our DHCP has issued a IP lease to CLIENT1 of 172.16.0.100, which was the starting range we provided earlier.
-This shows our entire network infrastructure is working. Our client has internet access, DHCP is issuing IP leasees, Active directory is documenting users, Domain controller natting and forwarding out to internet and properly return pings sent out. We can consider CLIENT1 as your company-issued laptop accessing your corporate network using your official login credentials.
+As we can see below, our CLIENT1 is now listed under "Computers" in our Active Directory. Under DHCP, we see our DHCP has issued an IP lease to CLIENT1 of 172.16.0.100, which was the starting range we provided earlier. This shows our entire network infrastructure is working. Our client has internet access; DHCP is issuing IP leases; Active Directory is documenting users; Domain Controller is natting and forwarding out to the internet; and properly returning pings sent out. We can consider CLIENT1 as your company-issued laptop accessing your corporate network using your official login credentials.
 
 ![Screenshot 2024-03-16 213356](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/668c1579-110c-40ac-9ebd-f72fea956fe8)
 
