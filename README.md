@@ -401,7 +401,7 @@ To create user, we go to AD > right-click _USERS > New > User. Give the First an
 
 ![Screenshot 2024-03-17 114119](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/576daca6-9438-40ef-a73d-594bf122dee5)
 
-We can edit the user however we'd like. Right-click the user and it gives you drop down menu of options to choose from. You can disable/Unlock accounts, Reset Passwords, Send Mail, etc. For more in depth options, click Properties.
+We can edit the user however we'd like. Right-click the user, it gives you drop down menu of options to choose from. You can disable/unlock accounts, reset passwords, send mail, etc. For more in depth options, click properties.
 
 ![Screenshot 2024-03-17 114906](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8933cf34-4811-4aca-bf49-cb429b61ac53)
 
