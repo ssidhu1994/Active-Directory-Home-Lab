@@ -262,9 +262,25 @@ We will install Windows 10 pro because it can join the domain, home can't. Custo
 
 ![Screenshot 2024-03-16 184553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51530e15-73ad-4c53-9123-3a216b78bc04)
 
-Once we login, we can check if our new user has internet access. Start by click start bottom right and type "CMD". Type IPCONFIG, and you should see list of IP addresses. 
+Once we login, we can check if our new user has internet access. Start by clicking start bottom right and type "CMD". Type IPCONFIG, and you should see list of IP addresses. 
 If our default gateway shows 172.16.0.1(Which is our DNS server), we are good to go. We can test this further by pinging any server on the internet, for example www.google.ca.
 We do this by typing ping www.google.ca and we should get a return ping. If we are not able to see the default gateway ip or ping to the internet, we must troubleshoot the routing and remote access.
+
+![Screenshot 2024-03-16 211334](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8d55beab-0ad1-4400-87a2-bc4c9c7a3bfa)
+
+![Screenshot 2024-03-16 211353](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/16ff7cc3-9bdc-496f-b965-a5ae728c699d)
+
+![Screenshot 2024-03-16 211419](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8f67f2a4-8072-45fe-b1e6-562307fc03d1)
+
+
+
+
+
+
+
+
+
+
 
 
 10.Bonus:Run PowerShell script to create 1,000 users in Active Directory:  <br/>
