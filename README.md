@@ -90,7 +90,7 @@ Insert Guest Additions CD image to reduce lag in VM. Double click the inserted i
 
 ![Screenshot 2024-03-13 234138](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/89519995-a8bd-4e9a-bc80-3f0757f9eaa5)
 
-Assign IP Addresses:  <br/>
+<b>Assign IP Addresses:</b>  <br/>
 Select the computer icon from bottom right icon tray, click unidentified network > Change adapter options.
 
 ![Screenshot 2024-03-13 235307](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ddb12733-b5a2-4044-ab9f-5ca187632923)
@@ -337,7 +337,7 @@ Lets find the user account we created when we put our own name at the top of the
 ![Screenshot 2024-03-17 101345](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/20305d2d-be64-482e-8012-2bbea29bb509)
 ![Screenshot 2024-03-17 101409](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06580138-0ed6-467e-b6cd-8120beff543b)
 
-Script Explained in depth
+<b>Script Explained in depth</b>
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
