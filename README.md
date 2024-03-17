@@ -274,8 +274,17 @@ We do this by typing ping www.google.ca and we should get a return ping. If we a
 
 Next we connect our local user to the domain server. 
 
+![Screenshot 2024-03-16 211831](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c6a9ec3b-09a2-4b52-98dd-871793221a43)
 
+![Screenshot 2024-03-16 211849](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/de430e6b-061e-45d5-827c-a065d03eea1f)
 
+![Screenshot 2024-03-16 211916](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/efff7735-d8b6-4a7f-9adf-107d5ec1b82f)
+
+![Screenshot 2024-03-16 212044](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/48fd223a-e1bd-4ef7-ad02-55c3dce67e39)
+
+![Screenshot 2024-03-16 212814](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ef1f8ed9-17d5-47ef-97f0-dbb503272693)
+
+![Screenshot 2024-03-16 212854](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/59381e8a-8651-4f58-9cae-63ad45e257cf)
 
 
 
