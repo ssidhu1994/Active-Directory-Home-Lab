@@ -343,8 +343,33 @@ Script Explained in depth
 
 ![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
+# ----- Edit these Variables for your own Use Case ----- #
+</b>This creates the password all the users will use.</b>
+$PASSWORD_FOR_USERS   = "Password1" 
+</b>This is the file which the script will pull the names from.</b>
+$USER_FIRST_LAST_LIST = Get-Content .\names.txt
+# ------------------------------------------------------ #
+</b>Converts the "Password1" to a object that powershell can use as a secure password.</b>
+$password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+</b>This line creates the OU(Organizational Unitfolder) for the user. Similar to how we created _ADMINS manually.</b>
+New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false
 
-
+foreach ($n in $USER_FIRST_LAST_LIST) {
+    $first = $n.Split(" ")[0].ToLower()
+    $last = $n.Split(" ")[1].ToLower()
+    $username = "$($first.Substring(0,1))$($last)".ToLower()
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+    
+    New-AdUser -AccountPassword $password `
+               -GivenName $first `
+               -Surname $last `
+               -DisplayName $username `
+               -Name $username `
+               -EmployeeID $username `
+               -PasswordNeverExpires $true `
+               -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
+               -Enabled $true
+}
 
 
 
