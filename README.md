@@ -411,6 +411,8 @@ To remove user, right-click user and Delete.
 
 ![Screenshot 2024-03-17 121323](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/81af9181-5ca7-432a-9dd4-4fa44a7ef515)
 
+<h2>Congradulations! You have completed your very own Active Directory Lab./h2>
+
 <!--
  ```diff
 - text in red
