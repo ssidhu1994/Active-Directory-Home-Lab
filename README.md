@@ -80,11 +80,11 @@ Create a default password of "Password1." We will use this as a universal passwo
 
 ![Screenshot 2024-03-13 232623](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/71706429-add3-4625-bf4d-dd28f258ffd3)
 
-To login, click input > Keyboard > Insert Ctrl+Alt+Del followed by password we created earlier. <br/>
+To login, click input > Keyboard > Insert Ctrl+Alt+Del, followed by the password we created earlier.  <br/>
 
 ![Screenshot 2024-03-13 232924](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/88f2c338-2cae-485c-a4d2-7185ad7f5aec)
 
-Insert Guest Additions CD image to reduce lag in VM. Double click the inserted image and run "VBoxWindowsadditions.amd64". Follow instructions on screen and click on reboot later. After Shutdown VM <br/>
+Insert the Guest Additions CD image to reduce lag in the VM. Double-click the inserted image and run "VBoxWindowsadditions.amd64." Follow the instructions on the screen and click on reboot later. After Shutdown VM. <br/>
 
 ![Screenshot 2024-03-13 233639](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/dcaac46f-8f34-482a-876e-af696a00aa1c)
 
@@ -97,8 +97,7 @@ Select the computer icon from bottom right icon tray, click unidentified network
 
 ![Screenshot 2024-03-13 235318](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9a2864b2-0104-474b-876c-957821346b76)
 
-Here we see our two nics(Network interface controller) from earlier. Assign and label the correct network adapter
-Start by selecting the Ethernet connection that is connected to the internet. View status of each adapter by right-click > Status > Details. Rename the one with "IPv4 Address: 10.0.2.15"(Which is the one connected to internet) to "Internet" and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to DHCP server not being able to find IP Address, so internal VM one was provided.
+Here we see our two NICs (network interface controller) from earlier. Assign and label the correct network adapter. Start by selecting the Ethernet connection that is connected to the internet. View the status of each adapter by right-clicking > Status > Details. Rename the one with "IPv4 Address: 10.0.2.15 (which is the one connected to the internet) to "Internet" and the other "unrecognized" one to X_INTERNAL_X. The unrecognized adapter is due to the DHCP server not being able to find an IP address, so an internal VM one was provided.
 
 ![Screenshot 2024-03-13 235333](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/c382f8c6-4186-4ba7-a24e-1bf4231a7f98)
 
@@ -108,16 +107,13 @@ Start by selecting the Ethernet connection that is connected to the internet. Vi
 
 ![Screenshot 2024-03-14 002118](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/06a2daa1-9286-4223-a28d-ea49f3328f44)
 
-In X_INTERNAL_X adapter options, right-click and select properties, double click Internet Protocol Version 4(TCP/IPv4). Change option to "Use the following IP address:" and enter the IP address: 172.16.0.1 and subnet mask as 255.255.255.0
-For DNS, Once AD is installed, it automatically installs DNS. So we can enter the same IP Address above 172.16.0.1(Server will use itself as DNS server)
+In X_INTERNAL_X adapter options, right-click and select properties; double-click Internet Protocol Version 4 (TCP/IPv4). Change option to "Use the following IP address:" and enter the IP address: 172.16.0.1 and subnet mask as 255.255.255.0 For DNS, once AD is installed, it automatically installs DNS. So we can enter the same IP address above, 172.16.0.1 (the server will use itself as a DNS server).
 
 ![Screenshot 2024-03-14 144551](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/e677ad2f-cbb2-4946-9575-c57785134355)
 
 6. <b>Name server, establish Active Directory, and create dedicated domain admin account:</b> <br/>
 
-From server manager, select "Add roles and features". Select next x2 and until you see "Select server role". Select "Active Directory Domain Services". Click add features and continue with installation. 
-Select yellow flag from upper right corner and click "Promote this server to a domain controller". Select Add a new forest and call it mydomain.com(Keep it simple for lab). 
-For password we will use the same "Password1" and disable "Create DNS delegation". Click next until installtion is complete, after which the VM will restart.
+From server manager, select "Add roles and features." Select next x2 until you see "Select server role." Select "Active Directory Domain Services." Click Add Features and continue with the installation. Select the yellow flag in the upper right corner and click "Promote this server to a domain controller." Select Add a New Forest and call it mydomain.com (keep it simple for lab). For password we will use the same "Password1" and disable "Create DNS delegation." Click next until installation is complete, after which the VM will restart.
 
 ![Screenshot 2024-03-14 145847](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9aac421c-8190-4687-bfc7-fa3a8771d0bd)
 
