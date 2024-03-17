@@ -14,7 +14,7 @@ In this Lab, we are going to walk through how to create an active directory home
 6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b>
 7. <b>Configure NAT and Routing for internet access</b>
 8. <b>Set up DHCP to assign IP addresses to Windows 10 machine</b>
-9. <b>Create new client user. Create another virtual machine which will host Windows 10, connect to private network</b>
+9. <b>Create another virtual machine which will host Windows 10, Create local user and connect to private network</b>
 10. <b>Bonus: Run PowerShell script to create 1,000 users in Active Directory</b>
 
 
@@ -231,14 +231,12 @@ Onces finished, right-click the DHCP server and Authorize. Right-click once more
 
 ![Screenshot 2024-03-16 160553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/56de7c23-9b6a-4022-9f4d-48f915b324e9)
 
-9.Create new client user. Create another virtual machine, install Windows 10, connect to private network:  <br/>
-
-To create new user
+9.Create another virtual machine which will host Windows 10, Create local user and connect to private network:  <br/>
 
 Next we will create a new VM server which the have windows 10 for our newly created client. Start by clicking new > name it CLIENT1 > Set hardware to your PC specifications. 
 Once server is created, click settings and under network, change adapter 1 to Internal Network. This is because we configured DHCP address from main controller. This mimics a corprate network.
 Now start the new VM and browse to the location you put the Windows.iso file and click next. When it askes to activate windows, click "I don't have a product key", and follow the on screen instructions.
-We will install Windows 10 pro because it can join the domain, home can't. Custom install followed by next. We can skip all the setup options, if it asks for network, click "I don't have internet", followed by "continue with limited setup". Give a username of "user" for simplicity and no password.
+We will install Windows 10 pro because it can join the domain, home can't. Custom install followed by next. We can skip all the setup options, if it asks for network, click "I don't have internet", followed by "continue with limited setup". Give a username of "user" for simplicity and no password, this will be our local user which we will connect to our domain server.
 
 ![Screenshot 2024-03-16 182648](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec9872ea-06f5-4a77-9f5d-178346cc20c3)
 
