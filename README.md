@@ -367,11 +367,14 @@ New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false <b
  <br/>
 foreach ($n in $USER_FIRST_LAST_LIST) {
  <br/>
-    $first = $n.Split(" ")[0].ToLower() <b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b> <br/>
+ <b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b> <br/>
+    $first = $n.Split(" ")[0].ToLower() 
      <br/>
-    $last = $n.Split(" ")[1].ToLower() <b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b> <br/>
+ <b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b> <br/>
+    $last = $n.Split(" ")[1].ToLower() 
      <br/>
-    $username = "$($first.Substring(0,1))$($last)".ToLower() <b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b> <br/>
+ <b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b> <br/>
+    $username = "$($first.Substring(0,1))$($last)".ToLower() 
      <br/>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan <br/>
      <br/>
