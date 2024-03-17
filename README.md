@@ -317,14 +317,16 @@ This contains 1000 randomized user names which will be added to AD with the scri
 
 ![Screenshot 2024-03-17 094711](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/ec955107-da9d-4a27-ae2e-e183e08621fc)
 
-Next is
-
+In order to run the script, we must open powershell. Bottom left, click start > Windows Powershell > right click Windows Powershell ISE > more > Run as administrator.
+Top left, click open folder > desktop > extracted folder > 1_CREATE_USERS. Before we run script we have to give Powershell permission to run scripts(This is a security feature and should only be in lab).
+In bottom blue box type Set-ExecutionPolicy Unrestricted. Next we have to tell Powershell the location of the script, which is the folder on the desktop.
+We do is by typing CD(change directory)\users\yourusername\desktop\AD_PS-master and hit enter. We can check to see if we are in the correct directory by typing LS. If we see our names.txt and script, it's good to go.
+Next we click play button and the script will ask if you're sure you want to run this, click run once and it should begin adding users to AD.
 
 ![Screenshot 2024-03-17 100152](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/39eb50f1-f651-47b5-83d3-5c17600e3f32)
 ![Screenshot 2024-03-17 100229](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/168daf02-6737-456c-be51-aa0776f40056)
 ![Screenshot 2024-03-17 100253](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/9a432d67-fb1e-4124-a619-81f176268092)
 ![Screenshot 2024-03-17 100416](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8299fe2a-a3d2-492c-9304-ddffc7e758ab)
-![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/1e856a3a-fa57-44f7-a633-0bb12f90cdfb)
 ![Screenshot 2024-03-17 101031](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/33310c13-9774-46e6-b66e-00d9fbe6f2b3)
 ![Screenshot 2024-03-17 101054](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/92961270-61bd-4aed-8b0a-d82f639aa258)
 ![Screenshot 2024-03-17 101109](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/2fc87326-c40f-4fcd-b700-01da8bfa5ec6)
@@ -335,8 +337,9 @@ Next is
 
 
 
+Script Explained in depth
 
-
+![Screenshot 2024-03-17 100842](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/935a07b4-fc54-4340-959e-cb12a21e60bd)
 
 
 
