@@ -9,7 +9,7 @@ In this Lab, we are going to walk through how to create an active directory home
 1. <b>Download and install Oracle Virtual Box</b> 
 2. <b>Download Windows 10 and Windows Server 2019 ISO files</b>
 3. <b>Create a virtual machine for Domain Controller and host active directory</b>
-4. <b>Equip virtual machine with two network adapters</b>
+4. <b>Equip virtual machine with two network adapters(NICS)</b>
 5. <b>Install Windows Server 2019 on Domain Controller, assign IP addresses</b>
 6. <b>Name server, establish Active Directory, and create dedicated domain admin account</b>
 7. <b>Configure NAT and Routing for internet access</b>
