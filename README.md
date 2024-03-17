@@ -355,9 +355,9 @@ $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
 New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false
 </b>This foreach loop, loops through the block of code below and will run for each individual user, where n is representation of the current user that is being examined. For example the first n will be our own name.</b>
 foreach ($n in $USER_FIRST_LAST_LIST) {
-    $first = $n.Split(" ")[0].ToLower()
-    $last = $n.Split(" ")[1].ToLower()
-    $username = "$($first.Substring(0,1))$($last)".ToLower()
+    $first = $n.Split(" ")[0].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in first variable(0 is first element in an array).</b>
+    $last = $n.Split(" ")[1].ToLower() </b><== This splits(adds space between first & last name) the username and stores it in last variable(1 is second element in an array).</b>
+    $username = "$($first.Substring(0,1))$($last)".ToLower() </b> Concatenates two things, takes first letter from first variable and adds it to lastname and then changes it to lowercase<== </b>
     Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
     
     New-AdUser -AccountPassword $password `
