@@ -358,7 +358,7 @@ foreach ($n in $USER_FIRST_LAST_LIST) { <br/>
 
  <b>How to create/edit/remove users manually</b>
 
-To create a user, we go to AD > right-click _USERS > New > User. Give the first and last name, along with the user logon name (username). We can use u (user) and j (first letter of first name) as last names. Give any password you like, and check the box for which password option you'd like to give the user.
+To create a user, we go to AD, then right-click on _USERS, select New, and then User. Provide the first and last name, along with the user logon name (username). We can use the format "u - jLastName" (where u stands for user, dash (-), j is the first letter of the first name, followed by the last name). Choose any password you like, and select the appropriate option for setting the password for the user.
 
 ![Screenshot 2024-03-17 113926](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/f091a905-e2ca-4b7e-922f-d1a8c6569125)
 
