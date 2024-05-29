@@ -1,7 +1,7 @@
 <h1>Active Directory Domain Services</h1>
 
 <h2>Description</h2>
-In this lab, we are going to walk through how to create an active directory home lab environment using Oracle Virtual Box. Configuring and running this lab will help develop our understanding of how active directory and Windows networking work. 
+In this lab, we are going to walk through how to create an active directory lab environment using Oracle Virtual Box. Configuring and running this lab will help develop our understanding of how active directory and Windows networking work. 
 <br />
 
 <h2>Lab Overview</h2>
