@@ -241,7 +241,7 @@ Next, we will create a new VM server with Windows 10. Start by clicking new > na
 
 ![Screenshot 2024-03-16 184553](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/51530e15-73ad-4c53-9123-3a216b78bc04)
 
-Once we login, we can check if our new user has internet access. Start by clicking the start button on the bottom left and type "CMD." Type IPCONFIG, and you should see a list of IP addresses. If our default gateway shows 172.16.0.1 (which is our DNS server), we are good to go. We can test this further by pinging any server on the internet, for example, www.google.ca. We do this by typing ping www.google.ca, and we should get a return ping. If we are not able to see the default gatewayIPp or ping to the internet, we must troubleshoot the routing and remote access.
+Once we login, we can check if our new user has internet access. Start by clicking the start button on the bottom left and type "CMD." Type IPCONFIG, and you should see a list of IP addresses. If our default gateway shows 172.16.0.1 (which is our DNS server), we are good to go. We can test this further by pinging any server on the internet, for example, www.google.ca. We do this by typing ping www.google.ca, and we should get a return ping. If we are not able to see the default gateway IP or ping to the internet, we must troubleshoot the routing and remote access.
 
 ![Screenshot 2024-03-16 211334](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/8d55beab-0ad1-4400-87a2-bc4c9c7a3bfa)
 
