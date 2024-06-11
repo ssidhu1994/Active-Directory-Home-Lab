@@ -1,10 +1,10 @@
 <h1>Active Directory Domain Services</h1>
 
 <h2>Description</h2>
-In this lab, we are going to walk through how to create an active directory lab environment using Oracle Virtual Box. Configuring and running this lab will help develop our understanding of how active directory and Windows networking work. 
+We will walk through the process of creating an Active Directory environment using Oracle VirtualBox. Configuring and running this setup will enhance our understanding of how Active Directory and Windows networking work.
 <br />
 
-<h2>Lab Overview</h2>
+<h2>Overview</h2>
 
 1. <b>Download and install Oracle VirtualBox.</b> 
 2. <b>Download the Windows 10 and Windows Server 2019 ISO files.</b>
@@ -378,6 +378,6 @@ To remove a user, right-click the user and select Delete.
 
 ![Screenshot 2024-03-17 121323](https://github.com/ssidhu1994/Active-Directory-Home-Lab/assets/141093027/81af9181-5ca7-432a-9dd4-4fa44a7ef515)
 
-<h2>Congradulations! You have completed your very own Active Directory Lab.</h2>
+<h2>Congratulations! You have completed your very own setup of an Active Directory environment.</h2>
 
 
